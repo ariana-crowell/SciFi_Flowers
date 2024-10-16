@@ -8,10 +8,22 @@
         <link rel="stylesheet" type="text/css" href="style.css">
     </head>
     <body>
-    <?php
-        include 'includes/header.php';
-    ?>
-    <p>You are logged out!</p>
-    <p>You are logged in!</p>
+        <?php 
+            require "includes/header.php"; 
+        ?> 
+        <main> 
+            <div > 
+                <section> 
+                    <?php 
+                        if (isset($_SESSION['idUsers'])) { 
+                            echo '<p>You are logged in!</p>'; 
+                        } 
+                        else { 
+                            echo '<p>You are logged out!</p>'; 
+                        } 
+                    ?>        
+                </section> 
+            </div> 
+        </main> 
     </body>
 </html>

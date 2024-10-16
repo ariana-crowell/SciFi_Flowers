@@ -17,7 +17,7 @@
                     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                         <div class="navbar-nav">
                             <a class="nav-link active" aria-current="page" href="index.php"><p>Home</p></a>
-                            <a class="nav-link active" aria-current="page" href="#"><p>Contact Us</p></a>
+                            <a class="nav-link active" aria-current="page" href="contact.php"><p>Contact Us</p></a>
                             <a class="nav-link active" aria-current="page" href="#"><p>Shop</p></a>
                             <a class="nav-link active" aria-current="page" href="#"><p>About Us</p></a>
                         </div>
