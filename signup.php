@@ -16,7 +16,7 @@
             <section class="section-defult">
                 <center>
                 <h1 class="signup">Signup</h1>
-                <form action="includes/signup.inc.php" method="post">
+                <form class="form-signup" action="includes/signup.inc.php" method="post">
                     <input type="text" name="uid" placeholder="Username">
                     <br>
                     <input type="text" name="mail" placeholder="E-mail">

@@ -7,23 +7,23 @@
         $passwordRepeat = $_POST['pwd-repeat'];
 
         if(empty($username) || empty($email) || empty($password) || empty($passwordRepeat)) {
-            header("Location: ../signup.php?error=emptyfeilds&uid".$username. "&mail=".$email);
+            header("Location: ../signup.php?error=emptyfields&uid".$username. "&mail=".$email);
             exit();
         }
         else if (!filter_var($email, FILTER_VALIDATE_EMAIL) && !preg_match("/^[a-zA-Z0-9]*$/", $username)){
-            header("Location: ../signup.php?error=emptyfeildsinvalidmailuid");
+            header("Location: ../signup.php?error=emptyfieldsinvalidmailuid");
             exit();
         }
         else if (!filter_var($email, FILTER_VALIDATE_EMAIL)){
-            header("Location: ../signup.php?error=emptyfeildsinvalidmail&uid".$username);
+            header("Location: ../signup.php?error=emptyfieldsinvalidmail&uid".$username);
             exit();
         }
         else if (!preg_match("/^[a-zA-Z0-9]*$/", $username)){
-            header("Location: ../signup.php?error=emptyfeildsinvaliduid&mail".$email);
+            header("Location: ../signup.php?error=emptyfieldsinvaliduid&mail".$email);
             exit();
         }
-        else if ($passsword !== $passwordRepeat) {
-            header("Location: ../signup.php?error=passwordcheckuid".$username. "&mail=".$email);
+        else if ($password !== $passwordRepeat) {
+            header("Location: ../signup.php?error=passwordcheck&uid".$username. "&mail".$email);
             exit();
         }
         else {
@@ -50,11 +50,20 @@
                         exit();
                     }
                     else {
-                        $hashedPwd = password_hash($password, PASSWORD_DEFULT)
+                        $hashedPwd = password_hash($password, PASSWORD_DEFAULT);
                         mysqli_stmt_bind_param($stmt, "sss", $username, $email, $hashedPwd);
                         mysqli_stmt_execute($stmt);
-                        mysqli_stmt_store_result($stmt);
+                        header("Location: ../signup.php?signup=success");
+                        exit();
+                    }
                 }
             }
         }
+        mysqli_stmt_close($stmt);
+        mysqli_close($conn);
+
+    }
+    else {
+        header("Location: ../signup.php");
+        exit();
     }
