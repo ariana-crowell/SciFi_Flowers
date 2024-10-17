@@ -26,7 +26,7 @@
                 } 
                 else if ($pwdCheck == true) { 
                     session_start(); 
-                    $_SESSION['idUsers'] = $row['idUser']; 
+                    $_SESSION['idUsers'] = $row['idUsers']; 
                     $_SESSION['uidUsers'] = $row['uidUsers']; 
                     header("Location: ../index.php?login=success"); 
                     exit(); 

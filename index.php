@@ -16,10 +16,10 @@
                 <section> 
                     <?php 
                         if (isset($_SESSION['idUsers'])) { 
-                            echo '<p>You are logged out!</p>'; 
+                            echo '<p>You are logged in!</p>'; 
                         } 
                         else { 
-                            echo '<p>You are logged in!</p>'; 
+                            echo '<p>You are logged out!</p>'; 
                         } 
                     ?>        
                 </section> 
