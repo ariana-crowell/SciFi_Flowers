@@ -35,7 +35,7 @@
                     header("Location: ../index.php?error=wrongpwd");
                     exit();
                 }
-            } 
+             }
             else { 
                 header("Location: ../index.php?error=nouser"); 
                 exit(); 
