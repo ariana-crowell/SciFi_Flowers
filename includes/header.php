@@ -22,15 +22,21 @@
                             <a class="nav-link active" aria-current="page" href="#"><p>About Us</p></a>
                         </div>
                     </div>
-                    <form action="includes/login.inc.php" method="post">
-                        <input type="text" name="mailuid" placeholder="Username/E-mail...">
-                        <input type="password" name="pwd" placeholder="Password...">
-                        <button type="submit" name="login-submit">Login</button>
-                    </form>
-                    <a class="signup" href="signup.php">Signup</a>
-                    <form action="includes/logout.inc.php" method="post">
-                        <button type="submit" name="logout-submit">Logout</button>
-                    </form>
+                    <?php 
+                        if (isset($_SESSION['idUsers'])) { 
+                            echo '<form action="includes/logout.inc.php" method="post"> 
+                            <button type="submit" name="logout-submit">Logout</button> 
+                            </form>';
+                            } 
+                        else { 
+                            echo '<form action="includes/login.inc.php" method="post"> 
+                            <input type="text" name="mailuid" placeholder="Username/E-mail..."> 
+                            <input type="password" name="pwd" placeholder="Password..."> 
+                            <button type="submit" name="login-submit">Login</button> 
+                            </form> 
+                            <a href="signup.php">Signup</a>'; 
+                        }
+                    ?>
                 </div>
             </nav>
     </body>
