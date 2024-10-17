@@ -1,3 +1,7 @@
+<?php
+    session_start();
+    require "dbh.inc.php";
+?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -30,7 +34,7 @@
                             } 
                         else { 
                             echo '<form action="includes/login.inc.php" method="post"> 
-                            <input type="text" name="mailuid" placeholder="E-mail..."> 
+                            <input type="text" name="mailuid" placeholder="Username/E-mail..."> 
                             <input type="password" name="pwd" placeholder="Password..."> 
                             <button type="submit" name="login-submit">Login</button> 
                             </form> 
