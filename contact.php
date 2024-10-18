@@ -42,6 +42,35 @@
               background-color: #f2f2f2;
               padding: 20px;
             }
+            /*FAQ Accordian style*/
+            .accordion {
+              align-items: center;
+              background-color: #ccc;
+              color: #444;
+              cursor: pointer;
+              width: 60%; /* Full width */
+              padding: 12px; /* Some padding */ 
+              border: 9px solid #ccc; /* Gray border */
+              border-radius: 4px; /* Rounded borders */
+              box-sizing: border-box; /* Make sure that padding and width stays in place */
+              margin-top: 6px; /* Add a top margin */
+              margin-bottom: 16px; /* Bottom margin */
+              text-align: left;
+              outline: none;
+              font-size: 15px;
+              transition: 0.4s;
+            }
+
+            .active, .accordion:hover {
+              background-color: #ccc; 
+            }
+
+            .panel {
+              padding: 0 18px;
+              display: none;
+              background-color: white;
+              overflow: hidden;
+            }
   </style>
   </head>
   <body>
@@ -76,17 +105,21 @@
       </form>
     </div>
       <!--FAQ Form-->
-      <center><h1>FAQs!</h1></center>
-    <div class="accordion" id="accordionExample">
+      <center>
+    <div class="accordion" id="accordionExample"><Center><h1>FAQs!</h1></center>
   <div class="accordion-item">
     <h2 class="accordion-header" id="headingOne">
       <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-       How are the flowers made?
+       How are our flowers made?
       </button>
     </h2>
     <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
       <div class="accordion-body">
-        <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+        <strong>To create our flowers, we design them in the lab using plant DNA.</strong> 
+        We offer three flower body bases: poeny, rose, and lily. We hope to offer more options
+        in the future, but as of now we take DNA samples from these live flowers and place the DNA 
+        inside a stem sample. Once the DNA is in a stem sample, we place it in a solution to grow in a warmer for about 30 days. Once the flower begans to bud, 
+        it is ready for shipping. The flower will continue to grow and last 6 monts with proper care.
       </div>
     </div>
   </div>
@@ -98,26 +131,49 @@
     </h2>
     <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
       <div class="accordion-body">
-        <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+        <strong>The flowers cannot reproduce.</strong> 
+        Each flower is custom made from DNA samples that are modifed.
+        This flower mutation does not offer the gentic possiblity of reproduction. Fortunately, our flowers last up to 6 months,
+        and once you order a custom flower once, your order is saved and you can simply click "previous orders" and reorder your favorite flower!
       </div>
     </div>
   </div>
   <div class="accordion-item">
     <h2 class="accordion-header" id="headingThree">
       <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-       What kind of flowers can I create?
+       What type of flowers can I create?
       </button>
     </h2>
     <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
       <div class="accordion-body">
-        <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+        <strong>We offer three flower bases: peony, rose, and lily.</strong> 
+        Currrently, we only offer three flower body bases, but we hope to offer more options in the future. 
+        However, with these three bases, you have your choice of flower body base color, flower body base size,
+        stem color, stem size, leaf options (texture, size, and color), and more! 
       </div>
     </div>
   </div>
 </div>
+</center>
+<br>
     
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+      var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+    </script>
   </body>
 </html>

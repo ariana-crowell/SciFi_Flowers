@@ -23,49 +23,29 @@
                         } 
                     ?>        
                 </section> 
-            </div> 
-             <!-- Carousel container -->
-<div class="carousel">
 
-<!-- Full-width images with number and caption text -->
-<div class="mySlides fade">
-  <div class="numbertext">1 / 3</div>
-  <img src="C:\Users\Ania.Ross\Downloads\fly trap.jfif" style="width:100%">
-  <div class="text">Caption Text</div>
+                <div id="carouselExampleFade" class="carousel slide carousel-fade">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="..." class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="..." class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="..." class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
 </div>
 
-<div class="mySlides fade">
-  <div class="numbertext">2 / 3</div>
-  <img src="C:\Users\Ania.Ross\Downloads\squigily flower.jfif" style="width:100%">
-  <div class="text">Caption Two</div>
-</div>
-
-<div class="mySlides fade">
-  <div class="numbertext">2 / 3</div>
-  <img src="C:\Users\Ania.Ross\Downloads\Lily-of-the-valley-flowers.webp" style="width:100%">
-  <div class="text">Caption Three</div>
-</div>
-
-<div class="mySlides fade">
-  <div class="numbertext">2 / 3</div>
-  <img src="https://th.bing.com/th/id/OIP.5k7qM_aJ3QJ5ogAKomkhEgHaDj?w=317&h=168&c=7&r=0&o=5&pid=1.7" style="width:100%">
-  <div class="text">Caption Four</div>
-</div>
-
-
-<div class="mySlides fade">
-  <div class="https://th.bing.com/th/id/OIP.A6LOpP3xJ1iH3OAw6bl2KAHaE7?w=295&h=197&c=7&r=0&o=5&pid=1.7" style="width:100%">
-  <div class="text">Caption Five</div>
-</div>
-
-<!-- Next and previous buttons -->
-<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-<a class="next" onclick="plusSlides(1)">&#10095;</a>
-</div>
-<br>
-
-
-</div>
         </main> 
     </body>
 </html>
