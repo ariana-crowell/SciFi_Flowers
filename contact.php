@@ -42,6 +42,35 @@
               background-color: #f2f2f2;
               padding: 20px;
             }
+            /*FAQ Accordian style*/
+            .accordion {
+              align-items: center;
+              background-color: #ccc;
+              color: #444;
+              cursor: pointer;
+              width: 60%; /* Full width */
+              padding: 12px; /* Some padding */ 
+              border: 9px solid #ccc; /* Gray border */
+              border-radius: 4px; /* Rounded borders */
+              box-sizing: border-box; /* Make sure that padding and width stays in place */
+              margin-top: 6px; /* Add a top margin */
+              margin-bottom: 16px; /* Bottom margin */
+              text-align: left;
+              outline: none;
+              font-size: 15px;
+              transition: 0.4s;
+            }
+
+            .active, .accordion:hover {
+              background-color: #ccc; 
+            }
+
+            .panel {
+              padding: 0 18px;
+              display: none;
+              background-color: white;
+              overflow: hidden;
+            }
   </style>
   </head>
   <body>
@@ -76,8 +105,8 @@
       </form>
     </div>
       <!--FAQ Form-->
-      <center><h1>FAQs!</h1></center>
-    <div class="accordion" id="accordionExample">
+      <center>
+    <div class="accordion" id="accordionExample"><Center><h1>FAQs!</h1></center>
   <div class="accordion-item">
     <h2 class="accordion-header" id="headingOne">
       <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
@@ -125,10 +154,26 @@
     </div>
   </div>
 </div>
+</center>
 <br>
     
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+      var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+    </script>
   </body>
 </html>
