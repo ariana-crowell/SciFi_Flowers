@@ -23,49 +23,80 @@
                         } 
                     ?>        
                 </section> 
-            </div> 
-             <!-- Carousel container -->
-<div class="carousel">
 
-<!-- Full-width images with number and caption text -->
-<div class="mySlides fade">
-  <div class="numbertext">1 / 3</div>
-  <img src="C:\Users\Ania.Ross\Downloads\fly trap.jfif" style="width:100%">
-  <div class="text">Caption Text</div>
-</div>
+<!-- Carousel container -->
+carousel 
 
-<div class="mySlides fade">
-  <div class="numbertext">2 / 3</div>
-  <img src="C:\Users\Ania.Ross\Downloads\squigily flower.jfif" style="width:100%">
-  <div class="text">Caption Two</div>
-</div>
+<div id="myCarousel" class="carousel slide" data-ride="carousel"> 
 
-<div class="mySlides fade">
-  <div class="numbertext">2 / 3</div>
-  <img src="C:\Users\Ania.Ross\Downloads\Lily-of-the-valley-flowers.webp" style="width:100%">
-  <div class="text">Caption Three</div>
-</div>
+        <ol class="carousel-indicators"> 
 
-<div class="mySlides fade">
-  <div class="numbertext">2 / 3</div>
-  <img src="https://th.bing.com/th/id/OIP.5k7qM_aJ3QJ5ogAKomkhEgHaDj?w=317&h=168&c=7&r=0&o=5&pid=1.7" style="width:100%">
-  <div class="text">Caption Four</div>
-</div>
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li> 
 
+          <li data-target="#myCarousel" data-slide-to="1"></li> 
 
-<div class="mySlides fade">
-  <div class="https://th.bing.com/th/id/OIP.A6LOpP3xJ1iH3OAw6bl2KAHaE7?w=295&h=197&c=7&r=0&o=5&pid=1.7" style="width:100%">
-  <div class="text">Caption Five</div>
-</div>
+          <li data-target="#myCarousel" data-slide-to="2"></li> 
 
-<!-- Next and previous buttons -->
-<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-<a class="next" onclick="plusSlides(1)">&#10095;</a>
-</div>
-<br>
+        </ol> 
 
+        <div class="carousel-inner"> 
 
-</div>
+          <div class="item active"> 
+
+            <center><img class="size" src="C:\Users\Ania.Ross\Downloads\fly trap.jfif"></center> 
+
+          </div>   
+
+          <div class="item"> 
+
+            <center><img class="size" src="C:\Users\Ania.Ross\Downloads\squigily flower.jfif"></center> 
+
+          </div>  
+
+          <div class="item"> 
+
+            <center><img class="size" src="C:\Users\Ania.Ross\Downloads\Lily-of-the-valley-flowers.webp"></center> 
+
+          </div> 
+
+          <div class="item"> 
+
+            <center><img class="size" src="ttps://th.bing.com/th/id/OIP.5k7qM_aJ3QJ5ogAKomkhEgHaDj?w=317&h=168&c=7&r=0&o=5&pid=1.7"></center> 
+
+          </div> 
+
+          <div class="item"> 
+
+            <center><img class="size" src="https://th.bing.com/th/id/OIP.A6LOpP3xJ1iH3OAw6bl2KAHaE7?w=295&h=197&c=7&r=0&o=5&pid=1.7"></center> 
+
+          </div> 
+
+          <div class="item"> 
+
+            <center><img class="size" src="Images/review6.png"></center> 
+
+          </div> 
+
+        </div> 
+
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev"> 
+
+          <span class="glyphicon glyphicon-chevron-left"></span> 
+
+          <span class="sr-only">Previous</span> 
+
+        </a> 
+
+        <a class="right carousel-control" href="#myCarousel" data-slide="next"> 
+
+          <span class="glyphicon glyphicon-chevron-right"></span> 
+
+          <span class="sr-only">Next</span> 
+
+        </a> 
+
+      </div> 
+
         </main> 
     </body>
 </html>
