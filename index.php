@@ -24,78 +24,27 @@
                     ?>        
                 </section> 
 
-<!-- Carousel container -->
-carousel 
-
-<div id="myCarousel" class="carousel slide" data-ride="carousel"> 
-
-        <ol class="carousel-indicators"> 
-
-          <li data-target="#myCarousel" data-slide-to="0" class="active"></li> 
-
-          <li data-target="#myCarousel" data-slide-to="1"></li> 
-
-          <li data-target="#myCarousel" data-slide-to="2"></li> 
-
-        </ol> 
-
-        <div class="carousel-inner"> 
-
-          <div class="item active"> 
-
-            <center><img class="size" src="C:\Users\Ania.Ross\Downloads\fly trap.jfif"></center> 
-
-          </div>   
-
-          <div class="item"> 
-
-            <center><img class="size" src="C:\Users\Ania.Ross\Downloads\squigily flower.jfif"></center> 
-
-          </div>  
-
-          <div class="item"> 
-
-            <center><img class="size" src="C:\Users\Ania.Ross\Downloads\Lily-of-the-valley-flowers.webp"></center> 
-
-          </div> 
-
-          <div class="item"> 
-
-            <center><img class="size" src="ttps://th.bing.com/th/id/OIP.5k7qM_aJ3QJ5ogAKomkhEgHaDj?w=317&h=168&c=7&r=0&o=5&pid=1.7"></center> 
-
-          </div> 
-
-          <div class="item"> 
-
-            <center><img class="size" src="https://th.bing.com/th/id/OIP.A6LOpP3xJ1iH3OAw6bl2KAHaE7?w=295&h=197&c=7&r=0&o=5&pid=1.7"></center> 
-
-          </div> 
-
-          <div class="item"> 
-
-            <center><img class="size" src="Images/review6.png"></center> 
-
-          </div> 
-
-        </div> 
-
-        <a class="left carousel-control" href="#myCarousel" data-slide="prev"> 
-
-          <span class="glyphicon glyphicon-chevron-left"></span> 
-
-          <span class="sr-only">Previous</span> 
-
-        </a> 
-
-        <a class="right carousel-control" href="#myCarousel" data-slide="next"> 
-
-          <span class="glyphicon glyphicon-chevron-right"></span> 
-
-          <span class="sr-only">Next</span> 
-
-        </a> 
-
-      </div> 
+                <div id="carouselExampleFade" class="carousel slide carousel-fade">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="..." class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="..." class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="..." class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
 
         </main> 
     </body>
