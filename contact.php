@@ -10,7 +10,7 @@
       body {font-family:arial, helvetica, sans-serif;}
       *{box-sizing:border-box;}
       /* Style inputs with type="text", select elements and textareas */
-          input[type=text], select, textarea {
+          .form, select, textarea {
               width: 100%; /* Full width */
               padding: 12px; /* Some padding */ 
               border: 9px solid #ccc; /* Gray border */
@@ -84,16 +84,16 @@
       <form action="action_page.php">
 
         <label for="fname">First Name</label>
-        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        <input class="form" type="text" id="fname" name="firstname" placeholder="Your name..">
 
         <label for="lname">Last Name</label>
-        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        <input class="form" type="text" id="lname" name="lastname" placeholder="Your last name..">
 
         <label for="lname">Phone Number</label>
-        <input type="text" id="pnum" name="phonenumber" placeholder="Your phone number..">
+        <input class="form" type="text" id="pnum" name="phonenumber" placeholder="Your phone number..">
 
         <label for="lname">Email</label>
-        <input type="text" id="email" name="email" placeholder="Your email..">
+        <input class="form" type="text" id="email" name="email" placeholder="Your email..">
 
         
 
@@ -175,5 +175,8 @@ for (i = 0; i < acc.length; i++) {
   });
 }
     </script>
+    <?php
+      include "includes/footer.php";
+    ?>
   </body>
 </html>
