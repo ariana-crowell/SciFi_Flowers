@@ -47,7 +47,10 @@
                             <a class="signup" href="signup.php">Signup</a>'; 
                         }
                     ?>
-                    <section> 
+                    <section>
+                        <br>
+                        <br>
+                        <br>
                     <?php 
                         if (isset($_SESSION['idUsers'])) { 
                             echo '<p>You are logged in!</p>'; 
