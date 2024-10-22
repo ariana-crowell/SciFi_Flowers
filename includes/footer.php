@@ -33,7 +33,7 @@
                         <img class="footerpic" src="img/headlabcontact.png" alt="contact">
                     </div>
                     <div class="col">
-                        <a class="footerlink" href="#">Terms and Conditions</a>
+                        <a class="footerlink" href="termsandconditions.html">Terms and Conditions</a>
                         <br>
                         <a class="footerlink" href="#">Help</a>
                         <br>
