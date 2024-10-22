@@ -3,97 +3,97 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <title>Contact</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="style.css">
     <style>
       body {font-family:arial, helvetica, sans-serif;}
       *{box-sizing:border-box;}
       /* Style inputs with type="text", select elements and textareas */
-          input[type=text], select, textarea {
-              width: 100%; /* Full width */
-              padding: 12px; /* Some padding */ 
-              border: 9px solid #ccc; /* Gray border */
-              border-radius: 4px; /* Rounded borders */
-              box-sizing: border-box; /* Make sure that padding and width stays in place */
-              margin-top: 6px; /* Add a top margin */
-              margin-bottom: 16px; /* Bottom margin */
-              resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
-            }
-            
-            /* Style the submit button with a specific background color etc */
-            input[type=submit] {
-              background-color: #04AA6D;
-              color: white;
-              padding: 12px 20px;
-              border: none;
-              border-radius: 4px;
-              cursor: pointer;
-            }
-            
-            /* When moving the mouse over the submit button, add a darker green color */
-            input[type=submit]:hover {
-              background-color: #45a049;
-            }
-            
-            /* Add a background color and some padding around the form */
-            .container {
-              border-radius: 5px;
-              background-color: #f2f2f2;
-              padding: 20px;
-            }
-            /*FAQ Accordian style*/
-            .accordion {
-              align-items: center;
-              background-color: #ccc;
-              color: #444;
-              cursor: pointer;
-              width: 60%; /* Full width */
-              padding: 12px; /* Some padding */ 
-              border: 9px solid #ccc; /* Gray border */
-              border-radius: 4px; /* Rounded borders */
-              box-sizing: border-box; /* Make sure that padding and width stays in place */
-              margin-top: 6px; /* Add a top margin */
-              margin-bottom: 16px; /* Bottom margin */
-              text-align: left;
-              outline: none;
-              font-size: 15px;
-              transition: 0.4s;
-            }
-
-            .active, .accordion:hover {
-              background-color: #ccc; 
-            }
-
-            .panel {
-              padding: 0 18px;
-              display: none;
-              background-color: white;
-              overflow: hidden;
-            }
-  </style>
+      .form, select, textarea {
+        width: 100%; /* Full width */
+        padding: 12px; /* Some padding */ 
+        border: 9px solid #ccc; /* Gray border */
+        border-radius: 4px; /* Rounded borders */
+        box-sizing: border-box; /* Make sure that padding and width stays in place */
+        margin-top: 6px; /* Add a top margin */
+        margin-bottom: 16px; /* Bottom margin */
+        resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+      }
+      /* Style the submit button with a specific background color etc */
+      input[type=submit] {
+        background-color: #04AA6D;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }      
+      /* When moving the mouse over the submit button, add a darker green color */
+      input[type=submit]:hover {
+        background-color: #45a049;
+      }   
+      /* Add a background color and some padding around the form */
+      .container {
+        border-radius: 5px;
+        background-color: #f2f2f2;
+        padding: 20px;
+      }
+      /*FAQ Accordian style*/
+      .accordion {
+        align-items: center;
+        background-color: #ccc;
+        color: #444;
+        cursor: pointer;
+        width: 60%; /* Full width */
+        padding: 12px; /* Some padding */ 
+        border: 9px solid #ccc; /* Gray border */
+        border-radius: 4px; /* Rounded borders */
+        box-sizing: border-box; /* Make sure that padding and width stays in place */
+        margin-top: 6px; /* Add a top margin */
+        margin-bottom: 16px; /* Bottom margin */
+        text-align: left;
+        outline: none;
+        font-size: 15px;
+        transition: 0.4s;
+      }
+      .active, .accordion:hover {
+        background-color: #ccc; 
+      }
+      .panel {
+        padding: 0 18px;
+        display: none;
+        background-color: white;
+        overflow: hidden;
+      }
+      .contact {
+        font-family: Jacques Francois Shadow;
+        color:whitesmoke;
+      }
+    </style>
+    <link href="img/logo.png" rel="icon">
   </head>
   <body>
         <?php 
             require "includes/header.php"; 
         ?> 
     <!--Header-->
-    <center><h1>Contact Us!</h1></center>
+    <center><h1 class="contact">Contact Us!</h1></center>
       <!--Contact Form-->
     <div class="container">
       <form action="action_page.php">
 
         <label for="fname">First Name</label>
-        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        <input class="form" type="text" id="fname" name="firstname" placeholder="Your name..">
 
         <label for="lname">Last Name</label>
-        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        <input class="form" type="text" id="lname" name="lastname" placeholder="Your last name..">
 
         <label for="lname">Phone Number</label>
-        <input type="text" id="pnum" name="phonenumber" placeholder="Your phone number..">
+        <input class="form" type="text" id="pnum" name="phonenumber" placeholder="Your phone number..">
 
         <label for="lname">Email</label>
-        <input type="text" id="email" name="email" placeholder="Your email..">
+        <input class="form" type="text" id="email" name="email" placeholder="Your email..">
 
         
 
@@ -175,5 +175,8 @@ for (i = 0; i < acc.length; i++) {
   });
 }
     </script>
+    <?php
+      include "includes/footer.php";
+    ?>
   </body>
 </html>

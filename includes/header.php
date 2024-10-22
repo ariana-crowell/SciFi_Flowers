@@ -10,6 +10,12 @@
         <title>Document</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="style.css">
+        <style>
+            .signup {
+                font-family: Jacques Francois Shadow;
+                color:whitesmoke;
+            }
+        </style>
 </head>
     <body>
             <nav class="navbar navbar-expand-lg">
@@ -22,8 +28,8 @@
                         <div class="navbar-nav">
                             <a class="nav-link active" aria-current="page" href="index.php"><p>Home</p></a>
                             <a class="nav-link active" aria-current="page" href="contact.php"><p>Contact Us</p></a>
-                            <a class="nav-link active" aria-current="page" href="#"><p>Shop</p></a>
-                            <a class="nav-link active" aria-current="page" href="#"><p>About Us</p></a>
+                            <a class="nav-link active" aria-current="page" href="shop.php"><p>Shop</p></a>
+                            <a class="nav-link active" aria-current="page" href="aboutus.php"><p>About Us</p></a>
                         </div>
                     </div>
                     <?php 
@@ -38,9 +44,22 @@
                             <input type="password" name="pwd" placeholder="Password..."> 
                             <button type="submit" name="login-submit">Login</button> 
                             </form> 
-                            <a href="signup.php">Signup</a>'; 
+                            <a class="signup" href="signup.php">Signup</a>'; 
                         }
                     ?>
+                    <section>
+                        <br>
+                        <br>
+                        <br>
+                    <?php 
+                        if (isset($_SESSION['idUsers'])) { 
+                            echo '<p>You are logged in!</p>'; 
+                        } 
+                        else { 
+                            echo '<p>You are logged out!</p>'; 
+                        } 
+                    ?>        
+                    </section>
                 </div>
             </nav>
     </body>
