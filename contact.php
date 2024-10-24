@@ -104,6 +104,7 @@
 
       </form>
     </div>
+    <br>
       <!--FAQ Form-->
       <center>
     <div class="accordion" id="accordionExample"><Center><h1>FAQs!</h1></center>

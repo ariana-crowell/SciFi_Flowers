@@ -7,11 +7,20 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="style.css">
         <link href="img/logo.png" rel="icon">
+        <style>
+        .aboutus {
+        font-family: Jacques Francois Shadow;
+        color:whitesmoke;
+      }
+        </style>
     </head>
     <body>
+    
         <?php 
             require "includes/header.php"; 
         ?>
+        <!--Header-->
+    <center><h1 class="aboutus">About Us</h1></center>
         <br>
         <div class="card bg-secondary text-white">
             <div class="card-body">
@@ -33,7 +42,7 @@
         </div>
         <br>
         <br>
-        <div class="card bg-secondary text-white">
+        <div class="card bg-secondary text-white ">
             <div class="card-body">
                 <h4 class="card-title">Sapphire Johnson</h4>
                 <p class="card-text">
