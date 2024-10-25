@@ -12,6 +12,9 @@
         font-family: Jacques Francois Shadow;
         color:whitesmoke;
       }
+      .card{
+        margin:30px;
+      }
         </style>
     </head>
     <body>
