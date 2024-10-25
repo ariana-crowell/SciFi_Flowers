@@ -7,25 +7,14 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="style.css">
         <link href="img/logo.png" rel="icon">
-        <style>
-          .carouselimg{
-            width:200px;
-            length: 250px;
-          }
-        </style>
+       
     </head>
     <body>
         <?php 
             require "includes/header.php"; 
         ?> 
-        <main> 
-            <div > 
-                <section> 
-                      
-                </section> 
-
-
-<div id="carouselExampleIndicators" class="carousel slide">
+        <div class="container-fluid">
+        <div id="carouselExampleIndicators" class="carousel slide">
   <div class="carousel-indicators">
     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -33,13 +22,13 @@
   </div>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="img\fly trap.jfif" class="d-block w-100 carouselimg"> 
+      <img src="img/fly_trap.jpg" class="d-block w-100" alt="...">
     </div>
     <div class="carousel-item">
-      <img src="img\squigily flower.jfif" class="d-block w-100" alt="...">
+      <img src="..." class="d-block w-100" alt="...">
     </div>
     <div class="carousel-item">
-      <img src="..." class="d-block w-100">
+      <img src="..." class="d-block w-100" alt="...">
     </div>
   </div>
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -51,7 +40,7 @@
     <span class="visually-hidden">Next</span>
   </button>
 </div>
-        </main> 
+</div>
 
         <?php
             include 'includes/footer.php';
