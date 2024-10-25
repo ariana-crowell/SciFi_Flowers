@@ -27,10 +27,10 @@
   </div>
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="C:\xampp\htdocs\SciFi_Flowers\img\fly trap.jfif" class="d-block w-100">
+      <img src="img\fly trap.jfif" class="d-block w-100">
     </div>
     <div class="carousel-item">
-      <img src="C:\xampp\htdocs\SciFi_Flowers\img\squigily flower.jfif" class="d-block w-100" alt="...">
+      <img src="img\squigily flower.jfif" class="d-block w-100" alt="...">
     </div>
     <div class="carousel-item">
       <img src="..." class="d-block w-100">
