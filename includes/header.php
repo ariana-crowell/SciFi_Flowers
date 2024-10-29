@@ -15,6 +15,7 @@
                 font-family: Jacques Francois Shadow;
                 color:whitesmoke;
             }
+            
         </style>
 </head>
     <body>
@@ -39,11 +40,25 @@
                             </form>';
                             } 
                         else { 
-                            echo '<form action="includes/login.inc.php" method="post"> 
-                            <input type="text" name="mailuid" placeholder="Username/E-mail..."> 
-                            <input type="password" name="pwd" placeholder="Password..."> 
-                            <button type="submit" name="login-submit">Login</button> 
-                            </form> 
+                            echo '<form action="includes/login.inc.php" method="post">
+                                    <div class="container">
+                                    <label for="uname"><b>Username</b></label>
+                                    <input type="text" placeholder="Enter Username" name="mailuid" required>
+                                
+                                    <label for="psw"><b>Password</b></label>
+                                    <input type="password" placeholder="Enter Password" name="pwd" required>
+                                
+                                    <button type="submit" name="login-submit">Login</button>
+                                    <label>
+                                        <input type="checkbox" checked="checked" name="remember"> Remember me
+                                    </label>
+                                    </div>
+                                
+                                    <div class="container" style="background-color:#f1f1f1">
+                                    
+                                    <span class="pwd">Forgot <a href="#">password?</a></span>
+                                    </div>
+                                </form> 
                             <a class="signup" href="signup.php">Signup</a>'; 
                         }
                     ?>
