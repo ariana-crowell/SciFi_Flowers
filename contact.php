@@ -80,37 +80,14 @@
     <!--Header-->
     <center><h1 class="contact">Contact Us!</h1></center>
       <!--Contact Form-->
-    <div class="container">
-      <form action="action_page.php">
-
-        <label for="fname">First Name</label>
-        <input class="form" type="text" id="fname" name="firstname" placeholder="Your first name..">
-
-        <label for="lname">Last Name</label>
-        <input class="form" type="text" id="lname" name="lastname" placeholder="Your last name..">
-
-        <label for="lname">Phone Number</label>
-        <input class="form" type="text" id="pnum" name="phonenumber" placeholder="Your phone number..">
-
-        <label for="lname">Email</label>
-        <input class="form" type="text" id="email" name="email" placeholder="Your email..">
-
-        
-
-        <label for="subject">Subject</label>
-        <textarea id="message" name="subject" placeholder="..." style="height:200px"></textarea>
-
-        <input type="submit" value="Submit">
-
-      </form>
-    </div>
+   
     <br>
       <!--FAQ Form-->
       <center>
     <div class="accordion" id="accordionExample"><Center><h1>FAQs!</h1></center>
   <div class="accordion-item">
     <h2 class="accordion-header" id="headingOne">
-      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+      <button class="accordion-button " type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
        How are our flowers made?
       </button>
     </h2>
@@ -157,22 +134,46 @@
 </div>
 </center>
 <br>
-    
+<div class="container">
+      <form action="action_page.php">
+
+        <label for="fname">First Name</label>
+        <input class="form" type="text" id="fname" name="firstname" placeholder="Your first name..">
+
+        <label for="lname">Last Name</label>
+        <input class="form" type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+        <label for="lname">Phone Number</label>
+        <input class="form" type="text" id="pnum" name="phonenumber" placeholder="Your phone number..">
+
+        <label for="lname">Email</label>
+        <input class="form" type="text" id="email" name="email" placeholder="Your email..">
+
+        
+
+        <label for="subject">Subject</label>
+        <textarea id="message" name="subject" placeholder="..." style="height:200px"></textarea>
+
+        <input type="submit" value="Submit">
+
+      </form>
+    </div>
+    <br>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
-      var acc = document.getElementsByClassName("accordion");
+     var acc = document.getElementsByClassName("accordion");
 var i;
 
 for (i = 0; i < acc.length; i++) {
   acc[i].addEventListener("click", function() {
     this.classList.toggle("active");
     var panel = this.nextElementSibling;
-    if (panel.style.display === "block") {
-      panel.style.display = "none";
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
     } else {
-      panel.style.display = "block";
-    }
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
   });
 }
     </script>
