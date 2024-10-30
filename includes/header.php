@@ -16,136 +16,79 @@
                 color:whitesmoke;
             }
             body {font-family: Arial, Helvetica, sans-serif;}
+            * {box-sizing: border-box;}
 
-/* Full-width input fields */
-input[type=text], input[type=password] {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  box-sizing: border-box;
-}
+            /* Button used to open the contact form - fixed at the bottom of the page */
+            .open-button {
+            background-color: #555;
+            color: white;
+            padding: 16px 20px;
+            border: none;
+            cursor: pointer;
+            opacity: 0.8;
+            position: fixed;
+            top: 23px;
+            right: 28px;
+            width: 280px;
+            }
 
-/* Set a style for all buttons */
-button {
-  background-color: #04AA6D;
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  cursor: pointer;
-  width: 100%;
-}
+            /* The popup form - hidden by default */
+            .form-popup {
+            display: none;
+            position: fixed;
+            bottom: 0;
+            right: 15px;
+            border: 3px solid #f1f1f1;
+            z-index: 9;
+            }
 
-button:hover {
-  opacity: 0.8;
-}
+            /* Add styles to the form container */
+            .form-container {
+            max-width: 300px;
+            padding: 10px;
+            background-color: white;
+            }
 
-/* Extra styles for the cancel button */
-.cancelbtn {
-  width: auto;
-  padding: 10px 18px;
-  background-color: #f44336;
-}
+            /* Full-width input fields */
+            .form-container input[type=text], .form-container input[type=password] {
+            width: 100%;
+            padding: 15px;
+            margin: 5px 0 22px 0;
+            border: none;
+            background: #f1f1f1;
+            }
 
-/* Center the image and position the close button */
-.imgcontainer {
-  text-align: center;
-  margin: 24px 0 12px 0;
-  position: relative;
-}
+            /* When the inputs get focus, do something */
+            .form-container input[type=text]:focus, .form-container input[type=password]:focus {
+            background-color: #ddd;
+            outline: none;
+            }
 
-img.avatar {
-  width: 40%;
-  border-radius: 50%;
-}
+            /* Set a style for the submit/login button */
+            .form-container .btn {
+            background-color: #04AA6D;
+            color: white;
+            padding: 16px 20px;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            margin-bottom:10px;
+            opacity: 0.8;
+            }
 
-.container {
-  padding: 16px;
-}
+            /* Add a red background color to the cancel button */
+            .form-container .cancel {
+            background-color: red;
+            }
 
-span.psw {
-  float: right;
-  padding-top: 16px;
-}
+            /* Add some hover effects to buttons */
+            .form-container .btn:hover, .open-button:hover {
+            opacity: 1;
+            }
+            </style>
 
-/* The Modal (background) */
-.modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-  padding-top: 60px;
-}
-
-/* Modal Content/Box */
-.modal-content {
-  background-color: #fefefe;
-  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
-  border: 1px solid #888;
-  width: 80%; /* Could be more or less, depending on screen size */
-}
-
-/* The Close Button (x) */
-.close {
-  position: absolute;
-  right: 25px;
-  top: 0;
-  color: #000;
-  font-size: 35px;
-  font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-  color: red;
-  cursor: pointer;
-}
-
-/* Add Zoom Animation */
-.animate {
-  -webkit-animation: animatezoom 0.6s;
-  animation: animatezoom 0.6s
-}
-
-@-webkit-keyframes animatezoom {
-  from {-webkit-transform: scale(0)} 
-  to {-webkit-transform: scale(1)}
-}
-  
-@keyframes animatezoom {
-  from {transform: scale(0)} 
-  to {transform: scale(1)}
-}
-
-/* Change styles for span and cancel button on extra small screens */
-@media screen and (max-width: 300px) {
-  span.psw {
-     display: block;
-     float: none;
-  }
-  .cancelbtn {
-     width: 100%;
-  }
-}            
-        </style>
 </head>
     <body>
-    <script>
-window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
-}
-var modal = document.getElementById('id01');
-</script>
             <nav class="navbar navbar-expand-lg">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="#"><img src="img/logo.png" alt="logo"></a>
@@ -167,35 +110,31 @@ var modal = document.getElementById('id01');
                             </form>';
                             } 
                         else { 
-                            echo '<button onclick="document.getElementById("id01").style.display="block" style="width:auto;">Login</button>
-                                    <div id="id01" class="modal">                                    
-                                    <form class="modal-content animate" action="/action_page.php" method="post">
-                                        <div class="imgcontainer">
-                                        <span onclick="document.getElementById("id01").style.display="none" class="close" title="Close Modal">&times;</span>
-                                        <img src="img/logo.png" alt="Logo" class="avatar">
-                                        </div>
-                                        <div class="container">
-                                        <label for="uname"><b>Username</b></label>
-                                        <input type="text" placeholder="Enter Username" name="mailuid" required>
-                                        <label for="pwd"><b>Password</b></label>
-                                        <input type="password" placeholder="Enter Password" name="pwd" required>                                            
-                                        <button type="submit">Login</button>
-                                        <label>
-                                            <input type="checkbox" checked="checked" name="remember"> Remember me
-                                        </label>
-                                        </div>
-                                        <div class="container" style="background-color:#f1f1f1">
-                                        <button type="button" onclick="document.getElementById("id01").style.display="none" class="cancelbtn">Cancel</button>
-                                        <span class="pwd">Forgot <a href="#">password?</a></span>
-                                        <a class="signup" href="signup.php">Signup</a>
-                                        </div>
+                            echo '<button class="open-button" onclick="openForm()">Open Form</button>
+                                    <div class="form-popup" id="myForm">
+                                    <form action="includes/login.inc.php" class="form-container">
+                                        <h1>Login</h1>
+                                        <label for="email"><b>Email</b></label>
+                                        <input type="text" placeholder="Enter Email" name="mail" required>
+                                        <label for="psw"><b>Password</b></label>
+                                        <input type="password" placeholder="Enter Password" name="pwd" required>
+                                        <button type="submit" class="btn">Login</button>
+                                        <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
                                     </form>
-                                    </div>';
+                                </div>';
                         }
                     ?>
                 </div>
             </nav>
+            <script>
+function openForm() {
+  document.getElementById("myForm").style.display = "block";
+}
 
+function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+</script>
 
     </body>
     
