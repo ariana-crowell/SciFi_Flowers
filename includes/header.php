@@ -110,7 +110,7 @@
                             </form>';
                             } 
                         else { 
-                            echo '<button class="open-button" onclick="openForm()">Open Form</button>
+                            echo '<button class="open-button" onclick="openForm()">Login</button>
                                     <div class="form-popup" id="myForm">
                                     <form action="includes/login.inc.php" class="form-container">
                                         <h1>Login</h1>
