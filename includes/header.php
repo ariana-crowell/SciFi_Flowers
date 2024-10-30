@@ -35,18 +35,12 @@
             /* The popup form - hidden by default */
             .form-popup {
             display: none;
-            position: fixed;
-            bottom: 0;
-            right: 15px;
+            position: absolute;
+            top: 15px;
+            right: 335px;
             border: 3px solid #f1f1f1;
             z-index: 9;
-            }
-
-            /* Add styles to the form container */
-            .form-container {
-            max-width: 300px;
-            padding: 10px;
-            background-color: white;
+            background-color: #555;
             }
 
             /* Full-width input fields */
@@ -62,18 +56,6 @@
             .form-container input[type=text]:focus, .form-container input[type=password]:focus {
             background-color: #ddd;
             outline: none;
-            }
-
-            /* Set a style for the submit/login button */
-            .form-container .btn {
-            background-color: #04AA6D;
-            color: white;
-            padding: 16px 20px;
-            border: none;
-            cursor: pointer;
-            width: 100%;
-            margin-bottom:10px;
-            opacity: 0.8;
             }
 
             /* Add a red background color to the cancel button */
@@ -112,18 +94,16 @@
                         else { 
                             echo '<button class="open-button" onclick="openForm()">Login</button>
                                     <div class="form-popup" id="myForm">
-                                    <form action="includes/login.inc.php" class="form-container">
-                                        <h1>Login</h1>
-                                        <label for="email"><b>Email</b></label>
-                                        <input type="text" placeholder="Enter Email" name="mail" required>
-                                        <label for="psw"><b>Password</b></label>
-                                        <input type="password" placeholder="Enter Password" name="pwd" required>
-                                        <button type="submit" class="btn">Login</button>
+                                        <form action="includes/login.inc.php" method="post">
+                                        <input type="text" name="mailuid" placeholder="Username/E-mail..."> 
+                                        <input type="password" name="pwd" placeholder="Password..."> 
+                                        <button type="submit" name="login-submit">Login</button> 
                                         <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
-                                    </form>
-                                </div>';
+                                        </form> 
+                                        <a href="signup.php">Signup</a>
+                                    </div>';
                         }
-                    ?>
+                    ?> 
                 </div>
             </nav>
             <script>
