@@ -15,7 +15,47 @@
       .card{
         margin:30px;
       }
-        </style>
+      .container {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: #008CBA;
+  overflow: hidden;
+  width: 100%;
+  height:0;
+  transition: .5s ease;
+}
+
+.container:hover .overlay {
+  bottom: 0;
+  height: 100%;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+    </style>
     </head>
     <body>
     
@@ -25,12 +65,26 @@
         <!--Header-->
     <center><h1 class="aboutus">About Us</h1></center>
         <br>
+
+
+<div class="container">
+  <img src="" alt="Avatar" class="image">
+  <div class="overlay">
+    <div class="text">a professor at Cornell University, taught botany and biology,
+         while also enjoying her passion of exploring the world. Multiple times a year
+          she travels to different locations in South America to discover plants to bring 
+          back to her class. Over the years, her love to travel to exotic locations to find
+           rare plants outgrew her passion of classroom teaching, so she decided to partner 
+           with someone who would be interested in working with these exotic plants. 
+           Still honoring her love for biology, she now leads our Labatory department and creates our artificial plants.</div>
+  </div>
+</div>
         
         <div class="card bg-secondary text-white">
             <div class="card-body">
                 <h4 class="card-title">Dr. Hydrangea</h4>
                 <p class="card-text">
-                a professor at Cornell University, taught botany and biology, while also enjoying her passion of exploring the world. Multiple times a year she travels to different locations in South America to discover plants to bring back to her class. Over the years, her love to travel to exotic locations to find rare plants outgrew her passion of classroom teaching, so she decided to partner with someone who would be interested in working with these exotic plants. Still honoring her love for biology, she now leads our Labatory department and creates our artificial plants.</p>
+                </p>
             </div>
         </div>
         </div>
