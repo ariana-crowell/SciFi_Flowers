@@ -35,8 +35,6 @@
                     <div class="col">
                         <a class="footerlink" href="termsandconditions.html">Terms and Conditions</a>
                         <br>
-                        <a class="footerlink" href="#">Help</a>
-                        <br>
                         <a class="footerlink" href="purchaseandpaymentpolicy.html">Purchase & Payment Policy</a>
                     </div>
                     <div class="col">
@@ -44,6 +42,7 @@
                     </div>
                 </div>
             </div>
+            
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
         </footer>
     </body>

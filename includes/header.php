@@ -13,7 +13,7 @@
         <style>
             .signup {
                 font-family: Jacques Francois Shadow;
-                color:whitesmoke;
+                color:#ffffff;
             }
             body {font-family: Arial, Helvetica, sans-serif;}
             * {box-sizing: border-box;}
@@ -26,7 +26,7 @@
             border: none;
             cursor: pointer;
             opacity: 0.8;
-            position: fixed;
+            position: absolute;
             top: 23px;
             right: 28px;
             width: 280px;
@@ -60,7 +60,8 @@
 
             /* Add a red background color to the cancel button */
             .form-container .cancel {
-            background-color: red;
+                background-color:red;
+                color:white;
             }
 
             /* Add some hover effects to buttons */
@@ -88,7 +89,7 @@
                     <?php 
                         if (isset($_SESSION['idUsers'])) { 
                             echo '<form action="includes/logout.inc.php" method="post"> 
-                            <button type="submit" name="logout-submit">Logout</button> 
+                            <button class="open-button" type="submit" name="logout-submit">Logout</button> 
                             </form>';
                             } 
                         else { 
@@ -100,7 +101,7 @@
                                         <button type="submit" name="login-submit">Login</button> 
                                         <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
                                         </form> 
-                                        <a href="signup.php">Signup</a>
+                                        <a class="signup" href="signup.php" style="decoration:none">Signup</a>
                                     </div>';
                         }
                     ?> 
