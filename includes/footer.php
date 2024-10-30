@@ -37,7 +37,7 @@
                         <br>
                         <a class="footerlink" href="#">Help</a>
                         <br>
-                        <a class="footerlink" href="#">Purchase & Payment Policy</a>
+                        <a class="footerlink" href="purchaseandpaymentpolicy.html">Purchase & Payment Policy</a>
                     </div>
                     <div class="col">
                         <img class="footerpic" src="img/ourofficecontact.png" alt="contact">
