@@ -8,7 +8,7 @@
         <link rel="stylesheet" type="text/css" href="footer_style.css">
         <style>
             footer {
-                background-color: #777;
+                background-color:rgba(59, 58, 57, 0.905);
                 padding: 10px;
                 text-align: center;
                 color: white;
@@ -19,11 +19,6 @@
                 color:whitesmoke;
                 text-decoration: none;
                 font-size: 30px;
-            }
-            .copyright-text {
-                background-color: rgba(117, 117, 117, 0.805);
-                color: white;
-                text-align: center;
             }
         </style>
     </head>
