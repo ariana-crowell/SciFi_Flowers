@@ -58,8 +58,8 @@
 /* Float four columns side by side */
 .column {
   float: left;
-  width: 25%;
-  padding: 0 10px;
+  width: 33.33%;
+  padding: 10px;
 }
 /* Remove extra left and right margins, due to padding */
 .row {margin: 0 -5px;}
@@ -70,18 +70,24 @@
   display: table;
   clear: both;
 }
+
     </style>
     </head>
     <body>
     
+
+ 
+
+
         <?php 
             require "includes/header.php"; 
         ?>
         <!--Header-->
     <center><h1 class="aboutus">About Us</h1></center>
         <br>
+<div class="row">
 
-        <div class="column">
+<div class="column">
     <div class="card">
     <div class="flip-card">
   <div class="flip-card-inner">
@@ -156,6 +162,8 @@
 </div>
     </div>
   </div>
+</div>
+       
 
 
 
