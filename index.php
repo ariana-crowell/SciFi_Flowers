@@ -22,6 +22,7 @@
             require "includes/header.php"; 
         ?>
         <br>
+        <div class="container">
         <center>
         <div id="demo" class="carousel slide" data-bs-ride="carousel">
 
@@ -86,7 +87,8 @@
     <span class="carousel-control-next-icon"></span>
   </button>
 </div>
-</center>
+      </center>
+      </div>
         <br>
         <?php
             include 'includes/footer.php';
