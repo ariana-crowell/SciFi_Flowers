@@ -107,7 +107,7 @@
         <br>
 <div class="row" id="margin" >
 
-<div class="col-md-4">
+<div class="col-sm-4">
     <div class="card" id="color">
     <div class="flip-card">
   <div class="flip-card-inner">
@@ -133,7 +133,7 @@
     </div>
   </div>
 
-  <div class="col-md-4" style="align:center;">
+  <div class="col-sm-4" style="align:center;">
     <div class="card" id="color1">
     <div class="flip-card">
   <div class="flip-card-inner">
@@ -159,7 +159,7 @@
     </div>
   </div>
        
-  <div class="col-md-4">
+  <div class="col-sm-4">
     <div class="card" id="color2">
     <div class="flip-card">
   <div class="flip-card-inner">
