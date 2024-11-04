@@ -18,8 +18,8 @@
 
 .flip-card {
   background-color: transparent;
-  width: 300px;
-  height: 300px;
+  width: 500px;
+  height: 500px;
   perspective: 1000px;
 }
 
@@ -28,9 +28,9 @@
   width: 100%;
   height: 100%;
   text-align: center;
-  transition: transform 0.6s;
+  transition: transform 1.5s;
   transform-style: preserve-3d;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0);
 }
 
 .flip-card:hover .flip-card-inner {
@@ -46,23 +46,18 @@
 }
 
 .flip-card-front {
-  background-color: #bbb;
+  background-color: rgb(117,108,108,0);
   color: black;
+  
 }
 
 .flip-card-back {
-  background-color: #2980b9;
+  background-color:rgb(117,108,108);
   color: white;
   transform: rotateY(180deg);
 }
-/* Float four columns side by side */
-.column {
-  float: left;
-  width: 33.33%;
-  padding: 10px;
-}
-/* Remove extra left and right margins, due to padding */
-.row {margin: 0 -5px;}
+
+
 
 /* Clear floats after the columns */
 .row:after {
@@ -70,7 +65,32 @@
   display: table;
   clear: both;
 }
+#color {
+    word-wrap: break-word;
+    background-color: rgb(181,31,31,0);
+    background-clip: border-box;
+    border: none;
+    height:500px;
+}
+#color1 {
+    word-wrap: break-word;
+    background-color: rgb(181,31,31,0);
+    background-clip: border-box;
+    border: none;
+}
+#color2 {
+    word-wrap: break-word;
+    background-color: rgb(181,31,31,0);
+    background-clip: border-box;
+    border: none;
+}
 
+#margin{  
+  margin-top:10px;
+  margin-right:90px;
+  margin-bottom:10px;
+  margin-left:90px;
+}
     </style>
     </head>
     <body>
@@ -85,14 +105,14 @@
         <!--Header-->
     <center><h1 class="aboutus">About Us</h1></center>
         <br>
-<div class="row">
+<div class="row" id="margin" >
 
-<div class="column">
-    <div class="card">
+<div class="col-md-4">
+    <div class="card" id="color">
     <div class="flip-card">
   <div class="flip-card-inner">
     <div class="flip-card-front">
-      <img src="img/First_scientist_better.jpg" alt="Avatar" style="width:300px;height:300px;">
+      <img src="img/First_scientist_better.jpg" alt="Avatar" style="width: 500px;height:500px;">
     </div>
     <div class="flip-card-back">
       <h1 class="aboutus" >Gina Hydrangea</h1> 
@@ -113,19 +133,20 @@
     </div>
   </div>
 
-  <div class="column">
-    <div class="card">
+  <div class="col-md-4" style="align:center;">
+    <div class="card" id="color1">
     <div class="flip-card">
   <div class="flip-card-inner">
     <div class="flip-card-front">
-      <img src="img/third_botanist.jpg" alt="Avatar" style="width:300px;height:300px;">
+      <img src="img/third_botanist.jpg" alt="Avatar" style="width:500px;height:500px;">
     </div>
     <div class="flip-card-back">
       <h1 class="aboutus">Sapphire Johnson</h1> 
       <ul>
         <li><p>Botany major at Cornell University</p> </li>
         <li><p>Immense love for botany and Science Fiction </p>  </li>
-        <li><p>Joined Sci-Fi Flowers with Dr. Hydrangea</p></li>        
+        <li><p>Joined Sci-Fi Flowers with Dr. Hydrangea</p></li> 
+        <li><p>Head of Plant Quality</p></li> 
       </ul>  
       <br>
       <p>saphjohnson@gmail.com</p>
@@ -138,19 +159,20 @@
     </div>
   </div>
        
-  <div class="column">
-    <div class="card">
+  <div class="col-md-4">
+    <div class="card" id="color2">
     <div class="flip-card">
   <div class="flip-card-inner">
     <div class="flip-card-front">
-      <img src="img/2nd_botanist_with_flowers.jpg" alt="Avatar" style="width:300px;height:300px;">
+      <img src="img/2nd_botanist_with_flowers.jpg" alt="Avatar" style="width:500px;height:500px;">
     </div>
     <div class="flip-card-back">
       <h1 class="aboutus">Lucia Lobbern</h1> 
       <ul>
         <li><p>Obtained BBA at University of Oregon</p> </li>
         <li><p>Immense love for botany and Science Fiction </p>  </li>
-        <li><p>Founded Sci-Fi Flowers in 2024</p></li>        
+        <li><p>Founded Sci-Fi Flowers in 2024</p></li>
+        <li><p>Head of Products and Consultation</p></li>
       </ul>  
       <br>
       <p>lucialobbern@gmail.com</p>
@@ -164,7 +186,7 @@
   </div>
 </div>
        
-
+<br>
 
 
 
