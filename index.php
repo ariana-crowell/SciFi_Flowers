@@ -12,8 +12,8 @@
           height:650px;
           width:1100px;
         }
-        .carouselimg {
-          height:650px;
+        .carousel-control-next,.carousel-control-prev {
+          filter:invert(100%);
         }
        </style>
     </head>
@@ -22,6 +22,7 @@
             require "includes/header.php"; 
         ?>
         <br>
+        <center>
         <div id="carouselExampleIndicators" class="carousel slide">
           <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -30,16 +31,16 @@
           </div>
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <img src="..." class="d-block w-100" alt="...">
+              <img src="img/lab_title.png" class="d-block w-100" alt="lab title" style="height:600px;">
             </div>
             <div class="carousel-item">
-              <img src="..." class="d-block w-100" alt="...">
+              <img src="img/lab_dna.png" class="d-block w-100" alt="lab dna" style="height:600px;">
             </div>
             <div class="carousel-item">
-              <img src="..." class="d-block w-100" alt="...">
+              <img src="img/lab_flower.png" class="d-block w-100" alt="lab flower" style="height:600px;">
             </div>
           </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <button class="carousel-control-prev bs-primary-bg-subtle" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
           </button>
@@ -47,7 +48,8 @@
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
           </button>
-        </div>
+      </div>
+      </center>
         <br>
         <?php
             include 'includes/footer.php';
