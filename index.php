@@ -8,6 +8,17 @@
         <link rel="stylesheet" type="text/css" href="style.css">
         <link href="img/logo.png" rel="icon">
        <style>
+        .container{
+          color:whitesmoke;
+          background-color:rgba(59, 58, 57, 0.905);
+        }
+             .aboutus {
+        font-family: Jacques Francois Shadow;
+        color:whitesmoke;
+        }
+        body {
+  font-family: Arial, Helvetica, sans-serif;
+}
         .carousel {
           height:650px;
           width:1100px;
@@ -21,6 +32,17 @@
         <?php 
             require "includes/header.php"; 
         ?>
+        <center><h1 class="aboutus">Welcome to Sci-Fi Flowers</h1>
+        <div class="container" col-md-4> 
+        <p>
+        Here at SciFi Flowers, we make lab-grown, custom flowers
+         for customers seeking an exhilarating experience through 
+         botany. Our mission is to create unique floral experiences,
+          while promoting scientific exploration.
+      </p>
+        </div>
+      </center>
+
         <br>
         <center>
         <div id="carouselExampleIndicators" class="carousel slide">
