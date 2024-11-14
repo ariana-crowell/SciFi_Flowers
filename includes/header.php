@@ -28,7 +28,7 @@
             opacity: 0.8;
             position: absolute;
             top: 23px;
-            right: 28px;
+            right: 70px;
             width: 280px;
             }
 
@@ -36,8 +36,8 @@
             .form-popup {
             display: none;
             position: absolute;
-            top: 15px;
-            right: 335px;
+            top: 80px;
+            right: 50px;
             border: 3px solid #f1f1f1;
             z-index: 9;
             background-color: #555;
@@ -67,6 +67,14 @@
             /* Add some hover effects to buttons */
             .form-container .btn:hover, .open-button:hover {
             opacity: 1;
+            }
+            @media (max-width: 600px) {
+                .open-button {
+                    width: 50px;
+                    height: 30px;
+                    padding: 5px;
+                }
+
             }
             </style>
 
