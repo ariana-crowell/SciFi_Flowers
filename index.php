@@ -10,7 +10,7 @@
        <style>
         .container{
           color:whitesmoke;
-          background-color:rgba(59, 58, 57, 0.905);
+          background-color:rgba(59, 58, 57, 0.7);
         }
              .aboutus {
         font-family: Jacques Francois Shadow;
@@ -33,7 +33,7 @@
             require "includes/header.php"; 
         ?>
         <center><h1 class="aboutus">Welcome to Sci-Fi Flowers</h1>
-        <div class="container" col-md-4> 
+        <div class="container"> 
         <p>
         Here at SciFi Flowers, we make lab-grown, custom flowers
          for customers seeking an exhilarating experience through 
