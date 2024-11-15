@@ -35,7 +35,7 @@
     body, html { margin: 0; padding: 0; height: 100%; }
     #map { width: 30%; height: 50%; }
   </style>
-    </head>
+  </head>
     <body>
         <?php 
             require "includes/header.php"; 

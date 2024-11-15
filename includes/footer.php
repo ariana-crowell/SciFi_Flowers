@@ -12,7 +12,9 @@
                 padding: 10px;
                 text-align: center;
                 color: white;
+                
             }
+            
 
             .footerlink {
                 font-family: Jacques Francois Shadow;
