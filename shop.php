@@ -8,11 +8,38 @@
         <link rel="stylesheet" type="text/css" href="style.css">
         <link href="img/logo.png" rel="icon">
         <style>
-            .card{
-                margin-top:5px;
-                margin-right: 25px;
-                margin-bottom:5px;
-                margin-left: 25px;
+            .card {
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+                max-width: 300px;
+                margin: auto;
+                text-align: center;
+                font-family: arial;
+            }
+
+            .price {
+                color: grey;
+                font-size: 22px;
+            }
+
+            .card button {
+                border: none;
+                outline: 0;
+                padding: 12px;
+                color: white;
+                background-color: #000;
+                text-align: center;
+                cursor: pointer;
+                width: 100%;
+                font-size: 18px;
+            }
+
+            .card button:hover {
+                opacity: 0.7;
+            }
+
+            .col-sm-3 {
+                padding:5px;
+                margin:5px;
             }
         </style>
     </head>
@@ -21,55 +48,29 @@
             require "includes/header.php"; 
         ?>
         <br>
-        <div class="row">
-            <div class="card col-sm-3" style="width: 18rem; background-color:gray;">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <div class="row">
-                        <a href="#" class="btn btn-primary col-sm-5">Checkout Now</a>
-                        <p class="col-sm-2">     </p>
-                        <a href="#" class="btn btn-success col-sm-5">Add to Cart</a>
-                    </div>
-                </div>
+        <div class="container row">
+            <div class="col-sm-2"></div>
+            <div class="card bg-secondary text-white col-sm-2">
+                <img src="" alt="..." style="width:100%">
+                <h1>Peony Base</h1>
+                <p>$</p>
+                <p><button>Learn More</button></p>
             </div>
-            <div class="card col-sm-3" style="width: 18rem; background-color:gray;">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <div class="row">
-                        <a href="#" class="btn btn-primary col-sm-5">Checkout Now</a>
-                        <p class="col-sm-2">     </p>
-                        <a href="#" class="btn btn-success col-sm-5">Add to Cart</a>
-                    </div>
-                </div>
+            <div class="col-sm-2"></div>
+            <div class="card bg-secondary text-white col-sm-2">
+                <img src="" alt="..." style="width:100%">
+                <h1>Lily Base</h1>
+                <p>$</p>
+                <p><button>Learn More</button></p>
             </div>
-            <div class="card col-sm-3" style="width: 18rem; background-color:gray;">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <div class="row">
-                        <a href="#" class="btn btn-primary col-sm-5">Checkout Now</a>
-                        <p class="col-sm-2">     </p>
-                        <a href="#" class="btn btn-success col-sm-5">Add to Cart</a>
-                    </div>
-                </div>
+            <div class="col-sm-2"></div>
+            <div class="card bg-secondary text-white col-sm-2">
+                <img src="" alt="..." style="width:100%">
+                <h1>Rose Base</h1>
+                <p>$</p>
+                <p><button>Learn More</button></p>
             </div>
-            <div class="card col-sm-3" style="width: 18rem; background-color:gray;">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <div class="row">
-                        <a href="#" class="btn btn-primary col-sm-5">Checkout Now</a>
-                        <p class="col-sm-2">     </p>
-                        <a href="#" class="btn btn-success col-sm-5">Add to Cart</a>
-                    </div>
-                </div>
-            </div>
+            <div class="col-sm-2"></div>
         </div>
         <br>
         <?php

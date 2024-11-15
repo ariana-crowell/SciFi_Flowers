@@ -105,6 +105,17 @@
         <!--Header-->
     <center><h1 class="aboutus">About Us</h1></center>
         <br>
+
+<div class="row" id="margin" >
+        <div class="card col-sm-4" style="width:500px">
+          <img class="card-img-top" src="img/First_scientist_better.jpg" alt="Gina Hydrangea">
+          <div class="card-body">
+            <h4 class="card-title">Gina Hydrangea</h4>
+            <p class="card-text">Head of Sci-Fi Flowers Labatory</p>
+            <a href="#" class="btn btn-primary">See Profile</a>
+          </div>
+        </div>
+
 <div class="row" id="margin" >
 
 <div class="col-sm-4">
