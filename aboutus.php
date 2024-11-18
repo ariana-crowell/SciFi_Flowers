@@ -43,7 +43,7 @@
         <br>
         <div class="container row">
             <div class="col-md-2">
-                <div class="card bg-secondary text-white" style="width: 25rem; height: 45rem;">
+                <div class="card bg-secondary text-white" style="width: 25rem; height: 48rem;">
                     <img src="img/First_scientist_better.jpg" class="card-img-top" alt="..." style="height:25rem;">
                     <div class="card-body ">
                         <h5 class="card-title">Gina Hydrangea</h5>
@@ -57,67 +57,39 @@
                     </div>
                 </div>
             </div>
+            <div class="col-md-3"></div>
+            <div class="col-md-2">
+                <div class="card bg-secondary text-white" style="width: 25rem; height: 48rem;">
+                    <img src="img\2nd_botanist_with_flowers.jpg" class="card-img-top" alt="..." style="height:25rem;">
+                    <div class="card-body ">
+                        <h5 class="card-title">Lucia Lobbern</h5>
+                        <p class="card-text"><ul class="list"> 
+                            <li><p>Obtained BBA at University of Oregon</p></li> 
+                            <li><p>Immense love for botany and Science Fiction</p></li> 
+                            <li><p>Founded Sci-Fi Flowers in 2024</p></li> 
+                            <li><p>Head of Products and Consultation</p></li> 
+                          </ul></p>
+                    <a href="#" class="btn btn-dark">Contact Us!</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3"></div>
+            <div class="col-md-2">
+                <div class="card bg-secondary text-white" style="width: 25rem; height: 48rem;">
+                    <img src="img/third_botanist.jpg" class="card-img-top" alt="..." style="height:25rem;">
+                    <div class="card-body ">
+                        <h5 class="card-title">Sapphire Johnson</h5>
+                        <p class="card-text"><ul class="list"> 
+                            <li><p>Botany major at Cornell University</p></li> 
+                            <li><p>Immense love for botany and Science Fiction</p></li> 
+                            <li><p>Joined Sci-Fi Flowers with Dr. Hydrangea</p></li> 
+                            <li><p>Head of Plant Quality</p></li> 
+                          </ul></p>
+                    <a href="#" class="btn btn-dark">Contact Us!</a>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="container row">
-  <div class="container col-sm-2">
-    <div class="card bg-secondary text-grey" style="width:400px">
-    <img class="card-img-top" src="img/First_scientist_better.jpg" alt="Card image" style="height:400px">
-    <div class="card-body">
-      <h4 class="card-title "></h4>
-    <ul class="list"> 
-
-        <li><p>Professor at Cornell University</p> </li> 
-
-        <li><p>Taught botany and biology</p>  </li> 
-
-        <li><p>Loves to travel and discover exotic plants</p></li> 
-
-        <li><p>Head of Sci-Fi Flowers Labatory</p></li> 
-
-    </ul>
-      <a href="contact.php" class="btn btn-primary">Contact Us!</a>
-  </div>
-  <div class="container col-sm-2">
-    <div class="card bg-secondary text-grey" style="width:400px;">
-    <img class="card-img-top" src="img/First_scientist_better.jpg" alt="Card image" style="height:400px">
-    <div class="card-body">
-      <h4 class="card-title ">Lucia Lobbern</h4>
-      <ul class="list"> 
-
-        <li><p>Obtained BBA at University of Oregon</p> </li> 
-
-        <li><p>Immense love for botany and Science Fiction </p>  </li> 
-
-        <li><p>Founded Sci-Fi Flowers in 2024</p></li> 
-
-        <li><p>Head of Products and Consultation</p></li> 
-
-      </ul>   
-
-</ul>   
-      <a href="contact.php" class="btn btn-primary">Contact Us!</a>
-  </div>
-  <div class="container col-sm-2">
-    <div class="card bg-secondary text-grey" style="width:400px">
-    <img class="card-img-top" src="img/third_botanist.jpg" alt="Card image" style="height:400px">
-    <div class="card-body">
-      <h4 class="card-title ">Sapphire Johnson</h4>
-      <ul class="list"> 
-
-        <li><p>Botany major at Cornell University</p> </li> 
-
-        <li><p>Immense love for botany and Science Fiction </p>  </li> 
-
-        <li><p>Joined Sci-Fi Flowers with Dr. Hydrangea</p></li>  
-
-        <li><p>Head of Plant Quality</p></li>  
-
-      </ul> 
-      <a href="contact.php" class="btn btn-primary">Contact Us!</a>
-  </div>           
-  <div class="col-sm-2"></div>
-      
-  </div>
 <br>    
         <?php
             include 'includes/footer.php';
