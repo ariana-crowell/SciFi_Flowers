@@ -10,7 +10,7 @@
         <style>
             .card {
                 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-                max-width: 300px;
+                max-width: 18rem;
                 margin: auto;
                 text-align: center;
                 font-family: arial;
@@ -36,11 +36,6 @@
             .card button:hover {
                 opacity: 0.7;
             }
-
-            .col-sm-3 {
-                padding:5px;
-                margin:5px;
-            }
         </style>
     </head>
     <body>
@@ -51,21 +46,21 @@
         <div class="container row">
             <div class="col-sm-2"></div>
             <div class="card bg-secondary text-white col-sm-2">
-                <img src="" alt="..." style="width:100%">
+                <img src="img\Orange-YellowPeonyBase.jpg" alt="..." style="width:100%">
                 <h1>Peony Base</h1>
                 <p>$</p>
                 <p><button>Learn More</button></p>
             </div>
             <div class="col-sm-2"></div>
             <div class="card bg-secondary text-white col-sm-2">
-                <img src="" alt="..." style="width:100%">
+                <img src="img/PinkLilyBase.jpg" alt="..." style="width:100%">
                 <h1>Lily Base</h1>
                 <p>$</p>
                 <p><button>Learn More</button></p>
             </div>
             <div class="col-sm-2"></div>
             <div class="card bg-secondary text-white col-sm-2">
-                <img src="" alt="..." style="width:100%">
+                <img src="img/PurpleRoseBase.jpg" alt="..." style="width:100%">
                 <h1>Rose Base</h1>
                 <p>$</p>
                 <p><button>Learn More</button></p>
