@@ -15,6 +15,9 @@
                 font-family: Jacques Francois Shadow;
                 color:white;
             }
+            .carousel-control-next,.carousel-control-prev {
+                filter:invert(100%);
+            }
         </style>
     </head>
     <body>
