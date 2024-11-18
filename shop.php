@@ -33,7 +33,7 @@
                     <div class="card-body ">
                         <h5 class="card-title">Peony Base</h5>
                         <p class="card-text">$14-$34</p>
-                    <a href="#" class="btn btn-dark">Shop Now</a>
+                    <a href="peonybase.php" class="btn btn-dark">Shop Now</a>
                     </div>
                 </div>
             </div>
@@ -44,7 +44,7 @@
                     <div class="card-body ">
                         <h5 class="card-title">Lily Base</h5>
                         <p class="card-text">$12-$32</p>
-                    <a href="#" class="btn btn-dark">Shop Now</a>
+                    <a href="lilybase.php" class="btn btn-dark">Shop Now</a>
                     </div>
                 </div>
             </div>
@@ -55,7 +55,7 @@
                     <div class="card-body ">
                         <h5 class="card-title">Rose Base</h5>
                         <p class="card-text">$10-$30</p>
-                    <a href="#" class="btn btn-dark">Shop Now</a>
+                    <a href="rosebase.php" class="btn btn-dark">Shop Now</a>
                     </div>
                 </div>
             </div>
