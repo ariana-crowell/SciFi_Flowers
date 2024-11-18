@@ -18,6 +18,10 @@
                 text-align: center;
                 font-family: arial;
             }
+            .textcolor{
+                font-family: Jacques Francois Shadow;
+                color:white;
+            }
         </style>
     </head>
     <body>
@@ -25,7 +29,7 @@
             require "includes/header.php"; 
         ?>
         <br>
-        <center><h1>Shop</h1></center>
+        <center><h1 class="textcolor">Shop</h1></center>
         <div class="container row">
             <div class="col-md-2">
                 <div class="card bg-secondary text-white" style="width: 35rem; height: 30rem;">

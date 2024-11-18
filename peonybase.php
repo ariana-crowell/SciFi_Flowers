@@ -11,6 +11,10 @@
             .carousel{
                 width:40rem;
             }
+            .textcolor{
+                font-family: Jacques Francois Shadow;
+                color:white;
+            }
         </style>
     </head>
     <body>
@@ -54,7 +58,7 @@
                 </button>
             </div>
             <div class="col-md-6">
-                
+                <h1 class="textcolor">Peony Base Flowers</h1>
             </div>
         </div>
         <br>    
