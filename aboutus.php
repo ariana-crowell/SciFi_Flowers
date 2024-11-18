@@ -9,28 +9,35 @@
         <link href="img/logo.png" rel="icon">
         <style>
         .aboutus {
-        font-family: Jacques Francois Shadow;
-        color:whitesmoke;
+          font-family: Jacques Francois Shadow;
+          color:whitesmoke;
         }
         body {
           font-family: Arial, Helvetica, sans-serif;
         }
 
-      .card{
-        align:center;
-      }
-      .list{
-        font-family: Jacques Francois Shadow;
-        color:
-      }
-      .card-title{
-        color:;
-        font-family:Jacques Francois Shadow;
-        font-size:2rem;
-      }
-      p{
-        color:grey;
-      }
+        .card {
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          max-width: 18rem;
+          margin-top:0rem;
+          margin-right: 3rem;
+          margin-bottom:1rem;
+          margin-left:3rem;
+          text-align: center;
+          font-family: arial;
+        }
+        .list{
+          font-family: Jacques Francois Shadow;
+          color:
+        }
+        .card-title{
+          color:;
+          font-family:Jacques Francois Shadow;
+          font-size:2rem;
+        }
+        p{
+          color:grey;
+        }
     </style>
     </head>
     <body>
@@ -43,7 +50,7 @@
         <br>
         <div class="container row">
             <div class="col-md-2">
-                <div class="card bg-secondary text-white" style="width: 25rem; height: 48rem;">
+                <div class="card bg-secondary text-white" style="width: 25rem; height: 52rem;">
                     <img src="img/First_scientist_better.jpg" class="card-img-top" alt="..." style="height:25rem;">
                     <div class="card-body ">
                         <h5 class="card-title">Gina Hydrangea</h5>
@@ -59,7 +66,7 @@
             </div>
             <div class="col-md-3"></div>
             <div class="col-md-2">
-                <div class="card bg-secondary text-white" style="width: 25rem; height: 48rem;">
+                <div class="card bg-secondary text-white" style="width: 25rem; height: 52rem;">
                     <img src="img\2nd_botanist_with_flowers.jpg" class="card-img-top" alt="..." style="height:25rem;">
                     <div class="card-body ">
                         <h5 class="card-title">Lucia Lobbern</h5>
@@ -75,7 +82,7 @@
             </div>
             <div class="col-md-3"></div>
             <div class="col-md-2">
-                <div class="card bg-secondary text-white" style="width: 25rem; height: 48rem;">
+                <div class="card bg-secondary text-white" style="width: 25rem; height: 52rem;">
                     <img src="img/third_botanist.jpg" class="card-img-top" alt="..." style="height:25rem;">
                     <div class="card-body ">
                         <h5 class="card-title">Sapphire Johnson</h5>
