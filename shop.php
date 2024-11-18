@@ -32,7 +32,7 @@
                     <img src="img/Orange-YellowPeonyBase.jpg" class="card-img-top" alt="..." style="height:20rem;">
                     <div class="card-body ">
                         <h5 class="card-title">Peony Base</h5>
-                        <p class="card-text">$</p>
+                        <p class="card-text">$14-$34</p>
                     <a href="#" class="btn btn-dark">Shop Now</a>
                     </div>
                 </div>
@@ -43,7 +43,7 @@
                     <img src="img/PinkLilyBase.jpg" class="card-img-top" alt="..." style="height:20rem;">
                     <div class="card-body ">
                         <h5 class="card-title">Lily Base</h5>
-                        <p class="card-text">$</p>
+                        <p class="card-text">$12-$32</p>
                     <a href="#" class="btn btn-dark">Shop Now</a>
                     </div>
                 </div>
@@ -54,7 +54,7 @@
                     <img src="img/PurpleRoseBase.jpg" class="card-img-top" alt="..." style="height:20rem;">
                     <div class="card-body ">
                         <h5 class="card-title">Rose Base</h5>
-                        <p class="card-text">$</p>
+                        <p class="card-text">$10-$30</p>
                     <a href="#" class="btn btn-dark">Shop Now</a>
                     </div>
                 </div>
