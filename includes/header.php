@@ -15,7 +15,11 @@
                 font-family: Jacques Francois Shadow;
                 color:#ffffff;
             }
-            body {font-family: Arial, Helvetica, sans-serif;}
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+                background-image:url(img/background.png);
+                background-size:cover;
+            }
             * {box-sizing: border-box;}
 
             /* Button used to open the contact form - fixed at the bottom of the page */
