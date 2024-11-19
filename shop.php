@@ -10,36 +10,17 @@
         <style>
             .card {
                 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-                max-width: 300px;
-                margin: auto;
+                max-width: 18rem;
+                margin-top:0rem;
+                margin-right: 3rem;
+                margin-bottom:1rem;
+                margin-left:3rem;
                 text-align: center;
                 font-family: arial;
             }
-
-            .price {
-                color: grey;
-                font-size: 22px;
-            }
-
-            .card button {
-                border: none;
-                outline: 0;
-                padding: 12px;
-                color: white;
-                background-color: #000;
-                text-align: center;
-                cursor: pointer;
-                width: 100%;
-                font-size: 18px;
-            }
-
-            .card button:hover {
-                opacity: 0.7;
-            }
-
-            .col-sm-3 {
-                padding:5px;
-                margin:5px;
+            .textcolor{
+                font-family: Jacques Francois Shadow;
+                color:white;
             }
         </style>
     </head>
@@ -48,29 +29,41 @@
             require "includes/header.php"; 
         ?>
         <br>
+        <center><h1 class="textcolor">Shop</h1></center>
         <div class="container row">
-            <div class="col-sm-2"></div>
-            <div class="card bg-secondary text-white col-sm-2">
-                <img src="" alt="..." style="width:100%">
-                <h1>Peony Base</h1>
-                <p>$</p>
-                <p><button>Learn More</button></p>
+            <div class="col-md-2">
+                <div class="card bg-secondary text-white" style="width: 35rem; height: 30rem;">
+                    <img src="img/Orange-YellowPeonyBase.jpg" class="card-img-top" alt="..." style="height:20rem;">
+                    <div class="card-body ">
+                        <h5 class="card-title">Peony Base</h5>
+                        <p class="card-text">$14-$34</p>
+                    <a href="peonybase.php" class="btn btn-dark">Shop Now</a>
+                    </div>
+                </div>
             </div>
-            <div class="col-sm-2"></div>
-            <div class="card bg-secondary text-white col-sm-2">
-                <img src="" alt="..." style="width:100%">
-                <h1>Lily Base</h1>
-                <p>$</p>
-                <p><button>Learn More</button></p>
+            <div class="col-md-3"></div>
+            <div class="col-md-2">
+                <div class="card bg-secondary text-white" style="width: 35rem; height: 30rem;">
+                    <img src="img/PinkLilyBase.jpg" class="card-img-top" alt="..." style="height:20rem;">
+                    <div class="card-body ">
+                        <h5 class="card-title">Lily Base</h5>
+                        <p class="card-text">$12-$32</p>
+                    <a href="lilybase.php" class="btn btn-dark">Shop Now</a>
+                    </div>
+                </div>
             </div>
-            <div class="col-sm-2"></div>
-            <div class="card bg-secondary text-white col-sm-2">
-                <img src="" alt="..." style="width:100%">
-                <h1>Rose Base</h1>
-                <p>$</p>
-                <p><button>Learn More</button></p>
+            <div class="col-md-3"></div>
+            <div class="col-md-2">
+                <div class="card bg-secondary text-white" style="width: 35rem; height: 30rem;">
+                    <img src="img/PurpleRoseBase.jpg" class="card-img-top" alt="..." style="height:20rem;">
+                    <div class="card-body ">
+                        <h5 class="card-title">Rose Base</h5>
+                        <p class="card-text">$10-$30</p>
+                    <a href="rosebase.php" class="btn btn-dark">Shop Now</a>
+                    </div>
+                </div>
             </div>
-            <div class="col-sm-2"></div>
+            <div class="col-md-1"></div>
         </div>
         <br>
         <?php
