@@ -60,7 +60,7 @@
                             <li><p>Loves to travel and discover exotic plants</p></li> 
                             <li><p>Head of Sci-Fi Flowers Labatory</p></li> 
                           </ul></p>
-                    <a href="#" class="btn btn-dark">Contact Us!</a>
+                    <a href="contact.php" class="btn btn-dark">Contact Us!</a>
                     </div>
                 </div>
             </div>
@@ -76,7 +76,7 @@
                             <li><p>Founded Sci-Fi Flowers in 2024</p></li> 
                             <li><p>Head of Products and Consultation</p></li> 
                           </ul></p>
-                    <a href="#" class="btn btn-dark">Contact Us!</a>
+                    <a href="contact.php" class="btn btn-dark">Contact Us!</a>
                     </div>
                 </div>
             </div>
@@ -92,7 +92,7 @@
                             <li><p>Joined Sci-Fi Flowers with Dr. Hydrangea</p></li> 
                             <li><p>Head of Plant Quality</p></li> 
                           </ul></p>
-                    <a href="#" class="btn btn-dark">Contact Us!</a>
+                    <a href="contact.php" class="btn btn-dark">Contact Us!</a>
                     </div>
                 </div>
             </div>
