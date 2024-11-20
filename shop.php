@@ -31,7 +31,8 @@
         <br>
         <center><h1 class="textcolor">Shop</h1></center>
         <div class="container row">
-            <div class="col-md-2">
+        <div class="col-lg-2"></div>
+            <div class="col-lg-2">
                 <div class="card bg-secondary text-white" style="width: 35rem; height: 30rem;">
                     <img src="img/Orange-YellowPeonyBase.jpg" class="card-img-top" alt="..." style="height:20rem;">
                     <div class="card-body ">
@@ -41,8 +42,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-3"></div>
-            <div class="col-md-2">
+            <div class="col-lg-2"></div>
+            <div class="col-lg-2">
                 <div class="card bg-secondary text-white" style="width: 35rem; height: 30rem;">
                     <img src="img/PinkLilyBase.jpg" class="card-img-top" alt="..." style="height:20rem;">
                     <div class="card-body ">
@@ -52,8 +53,8 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-3"></div>
-            <div class="col-md-2">
+            <div class="col-lg-2"></div>
+            <div class="col-lg-2">
                 <div class="card bg-secondary text-white" style="width: 35rem; height: 30rem;">
                     <img src="img/PurpleRoseBase.jpg" class="card-img-top" alt="..." style="height:20rem;">
                     <div class="card-body ">
@@ -63,7 +64,6 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-1"></div>
         </div>
         <br>
         <?php
