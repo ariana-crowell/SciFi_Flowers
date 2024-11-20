@@ -49,8 +49,9 @@
     <center><h1 class="aboutus">About Us</h1></center>
         <br>
         <div class="container row">
-            <div class="col-md-2">
-                <div class="card bg-secondary text-white" style="width: 25rem; height: 52rem;">
+        <div class="col-lg-2"></div>
+            <div class="col-lg-2">
+                <div class="card bg-secondary text-white" style="width: 40rem; height: 52rem;">
                     <img src="img/First_scientist_better.jpg" class="card-img-top" alt="..." style="height:25rem;">
                     <div class="card-body ">
                         <h5 class="card-title">Gina Hydrangea</h5>
@@ -64,9 +65,9 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-3"></div>
-            <div class="col-md-2">
-                <div class="card bg-secondary text-white" style="width: 25rem; height: 52rem;">
+            <div class="col-lg-2"></div>
+            <div class="col-lg-2">
+                <div class="card bg-secondary text-white" style="width: 40rem; height: 52rem;">
                     <img src="img\2nd_botanist_with_flowers.jpg" class="card-img-top" alt="..." style="height:25rem;">
                     <div class="card-body ">
                         <h5 class="card-title">Lucia Lobbern</h5>
@@ -80,9 +81,9 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-3"></div>
-            <div class="col-md-2">
-                <div class="card bg-secondary text-white" style="width: 25rem; height: 52rem;">
+            <div class="col-lg-2"></div>
+            <div class="col-lg-2">
+                <div class="card bg-secondary text-white" style="width: 40rem; height: 52rem;">
                     <img src="img/third_botanist.jpg" class="card-img-top" alt="..." style="height:25rem;">
                     <div class="card-body ">
                         <h5 class="card-title">Sapphire Johnson</h5>
