@@ -114,7 +114,7 @@
                         if($row = mysqli_fetch_assoc($result)){
                             echo $row['ProductType'];
                             echo "<br>";
-                            echo "$27-31" ;
+                            echo "$27-$31" ;
                             echo "<br>";
                             echo $row['FlowerDescription'];
                             echo "<br>";
