@@ -116,7 +116,7 @@
                             echo "<br>";
                             echo "$25-$29" ;
                             echo "<br>";
-                            echo $row['FlowerDescription'];
+                            echo "Our lab-grown Lily flower is a testament to the modernity and wonders of science and fiction combined. This flower features beautifully elongated, elegant petals in the most pleasant flower-base. We offer several beautifully vibrant color options: purple, grey-blue, orange-yellow, pink, and green. Each option is unique, and all options are available for purchase in a bouquet bundle for the exclusive price of $130 USD! Do not miss out on the perfect gift for Mother’s Day, your significant other, weddings, or a casual home flower. Customize your lavish lily today! ";
                             echo "<br>";
                             echo "<br>";
                             echo "Choose Color:";
