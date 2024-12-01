@@ -118,6 +118,9 @@
                             echo "<br>";
                             echo $row['FlowerDescription'];
                             echo "<br>";
+                            echo "<br>";
+                            echo "Choose Color:";
+                            echo "<br>";
                         }
                     }
                 ?>
