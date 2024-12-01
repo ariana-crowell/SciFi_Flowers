@@ -42,38 +42,20 @@
         </style>
   <!-- Mapbox CSS -->
   <link href="https://api.mapbox.com/mapbox-gl-js/v2.10.0/mapbox-gl.css" rel="stylesheet">
-<<<<<<< HEAD
   <style>
     /* Set the map to take the full viewport */
     body, html { margin: 0; padding: 0; height: 100%; }
     #map { width: 30%; height: 50%; }
     p.solid {border-style: solid; color:grey }
   </style>
-=======
  
->>>>>>> 05e0d1011f1d9183d660a801af7b0a1e363bdb02
   </head>
     <body>
         <?php 
             require "includes/header.php"; 
         ?>
-<<<<<<< HEAD
-        <center><h1 class="aboutus">Welcome to Sci-Fi Flowers</h1>
-        <div class="container"> 
-        <p>
-        Here at SciFi Flowers, we make lab-grown, custom flowers
-         for customers seeking an exhilarating experience through 
-         botany.
-          Our mission is to create unique floral experiences,
-          while promoting scientific exploration. Thers is A flower
-          for everyone and we can provide.
-      </p>
-        </div>
-      </center>
-
+        
         <br>
-=======
->>>>>>> 05e0d1011f1d9183d660a801af7b0a1e363bdb02
         <center>
           <h1 class="aboutus">Welcome to Sci-Fi Flowers</h1>      
         </center>
