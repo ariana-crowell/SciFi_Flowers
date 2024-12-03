@@ -42,7 +42,7 @@
     </head>
     <body>
 
-            <?php 
+        <?php 
             require "includes/header.php"; 
         ?>
         <!--Header-->

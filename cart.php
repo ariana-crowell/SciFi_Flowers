@@ -3,14 +3,16 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Shop</title>
+        <title>Cart</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="style.css">
         <link href="img/logo.png" rel="icon">
         <style>
             .col-md-2 {
                 color:whitesmoke;
-                background-color:rgba(59, 58, 57, 0.7);
+                background-color:#ccc;
+
+                
             }
             .aboutus {
           font-family: Jacques Francois Shadow;
@@ -19,6 +21,8 @@
         .shop{
             background-color:rgba(59, 58, 57, 0.7);
         }
+    
+
         </style>
     </head>
     <body>
@@ -30,7 +34,7 @@
         <br>
         <br>
         <main>
-            <div class="row">
+            <div class="row ">
             <div class="col-md-1"></div>
                 <div class="col-md-2">
                     <p class="padding">Purple Peony</p>
@@ -54,7 +58,9 @@
                 </div>
                 <div class="col-md-1"></div>
             </div>
-            <br>
+            <div class="cart">
+                
+            </div>
             <div class="row">
                 <div class="col-md-1"></div>
                 <div class="col-md-2">
@@ -79,7 +85,6 @@
                 </div>
                 <div class="col-md-1"></div>
             </div>
-            <br>
             <div class="row">
                 <div class="col-md-1"></div>
                 <div class="col-md-2">
@@ -104,7 +109,6 @@
                 </div>
                 <div class="col-md-1"></div>
             </div>
-          </section>
 <br>
           <center>
             <section class="cart red-black-buy">
