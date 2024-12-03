@@ -12,7 +12,7 @@
         }
         body {
   font-family: Arial;
-  font-size: 17px;
+  font-size: 18px;
   padding: 8px;
 }
 
