@@ -88,7 +88,7 @@
                             echo $row['FlowerDescription'];
                             echo "<br>";
                             echo "<br>";
-                            echo "Choose Color:";
+                            echo "Explore Our Colors:";
                             echo "<br>";
                         }
                     }

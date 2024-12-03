@@ -3,15 +3,26 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Shop</title>
+        <title>Cart</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="style.css">
         <link href="img/logo.png" rel="icon">
         <style>
             .col-md-2 {
                 color:whitesmoke;
-                background-color:rgba(59, 58, 57, 0.7);
+                background-color:#ccc;
+
+                
             }
+            .aboutus {
+          font-family: Jacques Francois Shadow;
+          color:whitesmoke;
+        }
+        .shop{
+            background-color:rgba(59, 58, 57, 0.7);
+        }
+    
+
         </style>
     </head>
     <body>
@@ -19,8 +30,11 @@
             require "includes/header.php"; 
         ?>
         <br>
+        <center><h1 class="aboutus">Shop Now</h1></center>
+        <br>
+        <br>
         <main>
-            <div class="row">
+            <div class="row ">
             <div class="col-md-1"></div>
                 <div class="col-md-2">
                     <p class="padding">Purple Peony</p>
@@ -44,7 +58,9 @@
                 </div>
                 <div class="col-md-1"></div>
             </div>
-            <br>
+            <div class="cart">
+                
+            </div>
             <div class="row">
                 <div class="col-md-1"></div>
                 <div class="col-md-2">
@@ -69,7 +85,6 @@
                 </div>
                 <div class="col-md-1"></div>
             </div>
-            <br>
             <div class="row">
                 <div class="col-md-1"></div>
                 <div class="col-md-2">
@@ -94,14 +109,17 @@
                 </div>
                 <div class="col-md-1"></div>
             </div>
+<br>
+          <center>
+            <section class="cart red-black-buy">
+                <div class="container shop">
+                <h2 class="aboutus">Shopping Cart</h2>
+                    <div id="cartItems"></div>
+                    <p>Total: $<span id="totalPrice">0</span></p>
+                    <a href="checkout.php"><button class="checkout-btn btn btn-dark">Checkout</button></a>
+                </div>              
           </section>
-
-          <section class="cart red-black-buy">
-              <h2>Shopping Cart</h2>
-              <div id="cartItems"></div>
-              <p>Total: $<span id="totalPrice">0</span></p>
-              <a href="checkout.php"><button class="checkout-btn">Checkout</button></a>
-          </section>
+    </center>
           <script>
               let cart = [];
               let total = 0;
