@@ -39,6 +39,7 @@
            }
           #map { 
             width: 30%; height: 50%; 
+            border:9px solid #ccc;
          }
         </style>
   <!-- Mapbox CSS -->
@@ -140,7 +141,7 @@
             </div>
    <!-- Div to hold the map --> 
 
-   <div id="map"></div> 
+<div id="map"></div>
 
  
 
