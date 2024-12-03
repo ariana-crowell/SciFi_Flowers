@@ -119,7 +119,9 @@ span.price {
     <?php 
             require "includes/header.php"; 
     ?>
-    <h1 class="aboutus">Checkout</h1>
+    <br>
+    <center><h1 class="aboutus">Checkout</h1></center>
+    <br>
     <div class="row">
   <div class="col-75">
     <div class="container">
@@ -181,7 +183,7 @@ span.price {
         <label>
           <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
         </label>
-        <input type="submit" value="Continue to checkout" class="btn">
+        <input type="submit" value="Submit Payment" class="btn">
       </form>
     </div>
   </div>

@@ -12,12 +12,22 @@
                 color:whitesmoke;
                 background-color:rgba(59, 58, 57, 0.7);
             }
+            .aboutus {
+          font-family: Jacques Francois Shadow;
+          color:whitesmoke;
+        }
+        .shop{
+            background-color:rgba(59, 58, 57, 0.7);
+        }
         </style>
     </head>
     <body>
         <?php 
             require "includes/header.php"; 
         ?>
+        <br>
+        <center><h1 class="aboutus">Shop Now</h1></center>
+        <br>
         <br>
         <main>
             <div class="row">
@@ -95,13 +105,17 @@
                 <div class="col-md-1"></div>
             </div>
           </section>
-
-          <section class="cart red-black-buy">
-              <h2>Shopping Cart</h2>
-              <div id="cartItems"></div>
-              <p>Total: $<span id="totalPrice">0</span></p>
-              <a href="checkout.php"><button class="checkout-btn">Checkout</button></a>
+<br>
+          <center>
+            <section class="cart red-black-buy">
+                <div class="container shop">
+                <h2 class="aboutus">Shopping Cart</h2>
+                    <div id="cartItems"></div>
+                    <p>Total: $<span id="totalPrice">0</span></p>
+                    <a href="checkout.php"><button class="checkout-btn btn btn-dark">Checkout</button></a>
+                </div>              
           </section>
+    </center>
           <script>
               let cart = [];
               let total = 0;
