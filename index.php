@@ -7,6 +7,7 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
         <link rel="stylesheet" type="text/css" href="style.css">
         <link href="img/logo.png" rel="icon">
+        
         <style>
           .container{
             color:whitesmoke;
@@ -38,26 +39,30 @@
            }
           #map { 
             width: 30%; height: 50%; 
-          }
+         }
         </style>
   <!-- Mapbox CSS -->
    
   <link href="https://api.mapbox.com/mapbox-gl-js/v2.10.0/mapbox-gl.css" rel="stylesheet">
 
-  <style>
-    /* Set the map to take the full viewport */
-    body, html { margin: 0; padding: 0; height: 100%; }
-    #map { width: 30%; height: 50%; }
-    p.solid {border-style: solid; color:grey }
+
+
+  
+    
+ 
   </style>
 
+
  
+
+
 
   </head>
     <body>
         <?php 
             require "includes/header.php"; 
         ?>
+
 
         <center><h1 class="aboutus">Welcome to Sci-Fi Flowers</h1>
         <div class="container"> 
@@ -71,23 +76,17 @@
       </p>
         </div>
       </center>
+      
 
         <br>
         <center>
-          <h1 class="aboutus">Welcome to Sci-Fi Flowers</h1>      
+          <h1 class="aboutus"></h1>      
         </center>
         
         <div class="row">
             <div class="col-md-3"></div>
 
-            <div class="container col-md-6">
-                <p> 
-                  Here at SciFi Flowers, we make lab-grown, custom flowers 
-                  for customers seeking an exhilarating experience through
-                  botany. Our mission is to create unique floral experiences, 
-                  while promoting scientific exploration. 
-                </p> 
-            </div>
+            
 
             <div class="col-md-3"></div>
         </div>    
@@ -134,6 +133,14 @@
             <div class="col-md-3"></div>
         </div>
         <br>
+        <div class="container col-md-6">
+                <p> 
+                  At SciFi Flowers, we make lab-grown, custom flowers 
+                  for customers seeking an exhilarating experience through
+                  botany. Our mission is to create unique floral experiences, 
+                  while promoting scientific exploration. 
+                </p> 
+            </div>
    <!-- Div to hold the map --> 
 
    <div id="map"></div> 
@@ -185,6 +192,7 @@
     .addTo(map); 
 
 </script> 
+
 <br>
         <?php
             include 'includes/footer.php';
