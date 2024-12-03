@@ -41,23 +41,24 @@
           }
         </style>
   <!-- Mapbox CSS -->
+   
   <link href="https://api.mapbox.com/mapbox-gl-js/v2.10.0/mapbox-gl.css" rel="stylesheet">
-<<<<<<< HEAD
+
   <style>
     /* Set the map to take the full viewport */
     body, html { margin: 0; padding: 0; height: 100%; }
     #map { width: 30%; height: 50%; }
     p.solid {border-style: solid; color:grey }
   </style>
-=======
+
  
->>>>>>> 05e0d1011f1d9183d660a801af7b0a1e363bdb02
+
   </head>
     <body>
         <?php 
             require "includes/header.php"; 
         ?>
-<<<<<<< HEAD
+
         <center><h1 class="aboutus">Welcome to Sci-Fi Flowers</h1>
         <div class="container"> 
         <p>
@@ -72,8 +73,6 @@
       </center>
 
         <br>
-=======
->>>>>>> 05e0d1011f1d9183d660a801af7b0a1e363bdb02
         <center>
           <h1 class="aboutus">Welcome to Sci-Fi Flowers</h1>      
         </center>
@@ -131,10 +130,61 @@
                     <span class="visually-hidden">Next</span>
                 </button>
             </div>
-
+            
             <div class="col-md-3"></div>
         </div>
-  
+        <br>
+   <!-- Div to hold the map --> 
+
+   <div id="map"></div> 
+
+ 
+
+<!-- Mapbox JS --> 
+
+<script src="https://api.mapbox.com/mapbox-gl-js/v2.10.0/mapbox-gl.js"></script> 
+
+<script> 
+
+  // Set up Mapbox access token 
+
+  mapboxgl.accessToken = 'pk.eyJ1IjoiYW5pYXJvc3MyNSIsImEiOiJjbTNoZGh6eTAwZzZ5Mm1vZ2JoM2U4b2s4In0.PAgTbWOJ4FiEA6SFOzVvzA'; 
+
+ 
+
+  // Create a new map instance 
+
+  const map = new mapboxgl.Map({ 
+
+    container: 'map', // Container id 
+
+    style: 'mapbox://styles/mapbox/streets-v11', // Map style resembling Apple Maps 
+
+    center: [-123.929, 45.993], // Coordinates for Seaside, Oregon 
+
+    zoom: 12 // Initial zoom level 
+
+  }); 
+
+ 
+
+  // Add navigation controls (zoom in/out) 
+
+  map.addControl(new mapboxgl.NavigationControl()); 
+
+ 
+
+  // Add a marker to indicate Seaside, Oregon 
+
+  new mapboxgl.Marker() 
+
+    .setLngLat([-123.929, 45.993]) 
+
+    .setPopup(new mapboxgl.Popup().setHTML("<h3>Seaside, Oregon</h3><p>A beautiful coastal town.</p>")) // Add a popup 
+
+    .addTo(map); 
+
+</script> 
 <br>
         <?php
             include 'includes/footer.php';
