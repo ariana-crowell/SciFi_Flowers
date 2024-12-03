@@ -136,7 +136,14 @@
         <br>
         <div class="container">
                 <p> 
-                  At SciFi Flowers, our labs are 100% cruelty free. We take ride in the work of every order big or small and hope to make your floral desires real.
+                  At SciFi Flowers, our labs are 100% cruelty free. We take pride in the work of every order
+                   big or small and hope to make your floral desires real. Here at SciFi Flowers, we are 
+                   where innovation meets nature! We specialize in crafting stunning, lab-grown flowers that
+                    blend the beauty of traditional blooms with the marvels of modern science. Our sustainable
+                     and eco-friendly approach ensures vibrant, long-lasting flowers without harming the 
+                     environment. Perfect for gifts, events, or simply bringing futuristic elegance into 
+                     your space, SciFi Flowers redefines the way we experience nature’s beauty. Discover
+                      a world where science and artistry bloom together, we are the future of florals! 
                 </p> 
             </div>
    <!-- Div to hold the map --> 
