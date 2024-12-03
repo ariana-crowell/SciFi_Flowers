@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Checkout</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link href="img/logo.png" rel="icon">
     <style>
          .aboutus {
           font-family: Jacques Francois Shadow;
@@ -120,9 +119,7 @@ span.price {
     <?php 
             require "includes/header.php"; 
     ?>
-    <br>
-    <center><h1 class="aboutus">Checkout</h1></center>
-    <br>
+    <h1 class="aboutus">Checkout</h1>
     <div class="row">
   <div class="col-75">
     <div class="container">
@@ -184,7 +181,7 @@ span.price {
         <label>
           <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
         </label>
-        <input type="submit" value="Submit Payment" class="btn">
+        <input type="submit" value="Continue to checkout" class="btn">
       </form>
     </div>
   </div>
