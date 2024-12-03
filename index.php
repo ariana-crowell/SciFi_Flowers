@@ -133,12 +133,9 @@
             <div class="col-md-3"></div>
         </div>
         <br>
-        <div class="container col-md-6">
+        <div class="container">
                 <p> 
-                  At SciFi Flowers, we make lab-grown, custom flowers 
-                  for customers seeking an exhilarating experience through
-                  botany. Our mission is to create unique floral experiences, 
-                  while promoting scientific exploration. 
+                  At SciFi Flowers, our labs are 100% cruelty free. We take ride in the work of every order big or small and hope to make your floral desires real.
                 </p> 
             </div>
    <!-- Div to hold the map --> 
