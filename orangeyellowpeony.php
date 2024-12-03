@@ -100,6 +100,7 @@
                 <a href="greenpeony.php"><button class="button button5"></button></a>
                 </p>
                 <br>
+                <a href="cart.php" ><button class="btn btn-dark" onclick="addToCart('Coral Fruit', 32)">Add to Cart</button></a>
             </div>
         </div>
         <br>    
