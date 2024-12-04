@@ -171,8 +171,6 @@ span.price {
                 <input type="text" id="expyear" name="expyear" placeholder="2018">
               </div>
               <div class="col-50">
-                <label for="cvv">CVV</label>
-                <input type="text" id="cvv" name="cvv" placeholder="352">
               </div>
             </div>
           </div>
